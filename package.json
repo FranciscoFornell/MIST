@@ -1,6 +1,6 @@
 {
   "name": "mist",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Marvelous Interactive Storytelling Tools",
   "scripts": {
     "version": "node_modules/.bin/lerna version --conventional-commits"
