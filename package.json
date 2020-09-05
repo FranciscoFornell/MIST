@@ -1,0 +1,29 @@
+{
+  "name": "mist",
+  "version": "0.0.0",
+  "description": "Marvelous Interactive Storytelling Tools",
+  "scripts": {
+    "version": "node_modules/.bin/lerna version --conventional-commits"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranciscoFornell/MIST.git"
+  },
+  "author": "Francisco Fornell Vazquez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FranciscoFornell/MIST/issues"
+  },
+  "homepage": "https://github.com/FranciscoFornell/MIST#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
+    "husky": "^4.2.5",
+    "lerna": "^3.22.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
