@@ -27,4 +27,4 @@ jobs:
     - run: npm install
     - run: npm run build --if-present
     - run: npm test --if-present      
-    - run: npm version --if-present
+    - run: npm run version --if-present
