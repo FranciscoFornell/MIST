@@ -1,0 +1,81 @@
+{
+  "name": "ink-story-manager",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Library for managing Inkle's Ink stories.",
+  "keywords": [
+    "ink",
+    "inkle"
+  ],
+  "author": "Francisco Fornell <fco.fornell@gmail.com>",
+  "homepage": "https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-manager#readme",
+  "license": "MIT",
+  "main": "dist/ink-story-manager.min.js",
+  "module": "src/index.js",
+  "directories": {
+    "src": "src",
+    "dist": "dist"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranciscoFornell/MIST.git"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/webpack --config webpack.config.js",
+    "lint": "node_modules/.bin/eslint src/**",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "checks": "run-p lint test"
+  },
+  "bugs": {
+    "url": "https://github.com/FranciscoFornell/MIST/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/eslint-parser": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^26.3.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "jest": "^26.4.2",
+    "jest-coverage-badges": "^1.1.2",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "jest": {
+    "clearMocks": true,
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "json-summary",
+      "text"
+    ],
+    "collectCoverageFrom": [
+      "src/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "roots": [
+      "<rootDir>/src/"
+    ]
+  }
+}
