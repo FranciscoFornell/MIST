@@ -27,7 +27,9 @@
   "scripts": {
     "build": "node_modules/.bin/webpack --config webpack.config.js",
     "lint": "node_modules/.bin/eslint src/**",
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "bugs": {
     "url": "https://github.com/FranciscoFornell/MIST/issues"
@@ -36,11 +38,37 @@
     "@babel/core": "^7.11.6",
     "@babel/eslint-parser": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "eslint": "^7.8.1",
     "eslint-config-prettier": "^6.11.0",
+    "jest": "^26.4.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "jest": {
+    "clearMocks": true,
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "src/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "roots": [
+      "<rootDir>/src/"
+    ]
   }
 }
