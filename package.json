@@ -4,7 +4,8 @@
   "description": "Marvelous Interactive Storytelling Tools",
   "scripts": {
     "version": "node_modules/.bin/lerna version --conventional-commits",
-    "checks": "node_modules/.bin/lerna run checks"
+    "checks": "node_modules/.bin/lerna run checks",
+    "bootstrap": "node_modules/.bin/lerna bootstrap --hoist"
   },
   "repository": {
     "type": "git",

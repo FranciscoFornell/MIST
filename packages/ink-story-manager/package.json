@@ -30,7 +30,7 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
-    "checks": "run-s lint test"
+    "checks": "run-p lint test"
   },
   "bugs": {
     "url": "https://github.com/FranciscoFornell/MIST/issues"
