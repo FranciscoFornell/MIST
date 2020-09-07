@@ -1,11 +1,7 @@
 # `ink-story-manager`
 
-> TODO: description
+A javascript library for managing Inkle's Ink stories
 
 ## Usage
 
-```
-const inkStoryManager = require('ink-story-manager');
-
-// TODO: DEMONSTRATE API
-```
+> TODO
