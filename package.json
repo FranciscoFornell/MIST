@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "Marvelous Interactive Storytelling Tools",
   "scripts": {
-    "version": "node_modules/.bin/lerna version --conventional-commits"
+    "version": "node_modules/.bin/lerna version --conventional-commits",
+    "checks": "node_modules/.bin/lerna run checks"
   },
   "repository": {
     "type": "git",
