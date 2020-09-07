@@ -1,7 +1,5 @@
-'use strict';
-
-module.exports = inkStoryManager;
-
-function inkStoryManager() {
+class InkStoryManager {
   // TODO
 }
+
+export default InkStoryManager;

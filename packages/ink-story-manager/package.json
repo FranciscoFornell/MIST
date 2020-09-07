@@ -11,6 +11,7 @@
   "homepage": "https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-manager#readme",
   "license": "MIT",
   "main": "dist/ink-story-manager.js",
+  "module": "src/index.js",
   "directories": {
     "src": "src",
     "dist": "dist"

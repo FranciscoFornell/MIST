@@ -1,7 +1,5 @@
-'use strict';
+import StoryManager from './ink-story-manager';
 
-const inkStoryManager = require('..');
-
-describe('ink-story-manager', () => {
+describe('InkStoryManager', () => {
   it('needs tests');
 });
