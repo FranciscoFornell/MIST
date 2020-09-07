@@ -1,0 +1,32 @@
+{
+  "name": "ink-story-manager",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Library for managing Inkle's Ink stories.",
+  "keywords": [
+    "ink",
+    "inkle"
+  ],
+  "author": "Francisco Fornell <fco.fornell@gmail.com>",
+  "homepage": "https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-manager#readme",
+  "license": "MIT",
+  "main": "dist/ink-story-manager.js",
+  "directories": {
+    "src": "src",
+    "dist": "dist"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranciscoFornell/MIST.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/FranciscoFornell/MIST/issues"
+  }
+}
