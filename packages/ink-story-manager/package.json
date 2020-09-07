@@ -10,7 +10,7 @@
   "author": "Francisco Fornell <fco.fornell@gmail.com>",
   "homepage": "https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-manager#readme",
   "license": "MIT",
-  "main": "dist/ink-story-manager.js",
+  "main": "dist/ink-story-manager.min.js",
   "module": "src/index.js",
   "directories": {
     "src": "src",
@@ -26,13 +26,20 @@
   },
   "scripts": {
     "build": "node_modules/.bin/webpack --config webpack.config.js",
+    "lint": "node_modules/.bin/eslint src/**",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/FranciscoFornell/MIST/issues"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/eslint-parser": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   }

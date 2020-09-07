@@ -1,4 +1,4 @@
-import StoryManager from './ink-story-manager';
+import InkStoryManager from './ink-story-manager';
 
 describe('InkStoryManager', () => {
   it('needs tests');
