@@ -44,12 +44,17 @@
     "eslint": "^7.8.1",
     "eslint-config-prettier": "^6.11.0",
     "jest": "^26.4.2",
+    "jest-coverage-badges": "^1.1.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
   "jest": {
     "clearMocks": true,
     "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "json-summary",
+      "text"
+    ],
     "collectCoverageFrom": [
       "src/*.js"
     ],
