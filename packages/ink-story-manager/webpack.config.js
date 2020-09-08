@@ -26,4 +26,12 @@ module.exports = {
     library: 'InkStoryManager',
     libraryTarget: 'umd',
   },
+  externals: {
+    inkjs: {
+      commonjs: 'inkjs',
+      commonjs2: 'inkjs',
+      amd: 'inkjs',
+      root: 'inkjs',
+    },
+  },
 };

@@ -4,4 +4,6 @@ A javascript library for managing Inkle's Ink stories
 
 ## Usage
 
-> TODO
+> TODO: Add instructions here
+> TODO: Remember inkjs is a peer dependency
+> TODO: Link API documentation too
