@@ -5,7 +5,7 @@
   "scripts": {
     "build": "node_modules/.bin/lerna run build",
     "test": "lerna run test",
-    "version": "node_modules/.bin/lerna version --conventional-commits",
+    "version": "node_modules/.bin/lerna version --conventional-commits --yes",
     "checks": "node_modules/.bin/lerna run checks",
     "bootstrap": "node_modules/.bin/lerna bootstrap --hoist"
   },
