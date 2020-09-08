@@ -6,7 +6,10 @@
     "build": "node_modules/.bin/lerna run build",
     "test": "lerna run test",
     "version": "node_modules/.bin/lerna version --conventional-commits --yes",
-    "checks": "node_modules/.bin/lerna run checks",
+    "checks": "run-p format:checks checks:packages",
+    "checks:packages": "node_modules/.bin/lerna run checks",
+    "format": "node_modules/.bin/prettier packages/**/src/**/* --write",
+    "format:checks": "node_modules/.bin/prettier packages/**/src/**/* --check",
     "bootstrap": "node_modules/.bin/lerna bootstrap --hoist"
   },
   "repository": {
