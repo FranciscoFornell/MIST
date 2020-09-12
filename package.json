@@ -12,7 +12,8 @@
     "format:checks": "prettier packages/**/src/**/* --check",
     "bootstrap": "lerna bootstrap --hoist",
     "lerna": "node_modules/.bin/lerna",
-    "prettier": "node_modules/.bin/prettier"
+    "prettier": "node_modules/.bin/prettier",
+    "docs": "lerna run docs"
   },
   "repository": {
     "type": "git",

@@ -30,7 +30,14 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
-    "checks": "run-p lint test"
+    "checks": "run-p lint test",
+    "docs:version": "jsdoc -c jsdoc.json",
+    "docs:latest": "run-s docs:clean-latest docs:generate-latest",
+    "docs:clean-latest": "rimraf ../../docs/ink-story-manager/latest",
+    "docs:generate-latest": "jsdoc -c jsdoc_latest.json",
+    "docs": "run-p docs:version docs:latest",
+    "docs:serve": "run-s docs serve:docs",
+    "serve:docs": "node_modules/.bin/http-server ../../docs/ink-story-manager/latest -o"
   },
   "bugs": {
     "url": "https://github.com/FranciscoFornell/MIST/issues"
@@ -42,11 +49,13 @@
     "@babel/preset-env": "^7.11.5",
     "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
+    "better-docs": "^2.3.2",
     "clean-webpack-plugin": "^3.0.0",
     "eslint": "^7.8.1",
     "eslint-config-prettier": "^6.11.0",
     "jest": "^26.4.2",
     "jest-coverage-badges": "^1.1.2",
+    "jsdoc": "^3.6.5",
     "npm-run-all": "^4.1.5",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
@@ -80,8 +89,8 @@
     ]
   },
   "dependencies": {
-    "better-docs": "^2.3.2",
+    "http-server": "^0.12.3",
     "inkjs": "^1.11.0",
-    "jsdoc": "^3.6.5"
+    "rimraf": "^3.0.2"
   }
 }
