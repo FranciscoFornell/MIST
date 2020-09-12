@@ -30,10 +30,10 @@ jobs:
           npm test
       - name: Build
         run: npm run build
+      - name: Publish
+        run: npm run version
       - name: Generate documentation
         run: |
           npm run docs
           git add --force docs
           git commit -m "Github actions: Documentation update"
-      - name: Publish
-        run: npm run version
