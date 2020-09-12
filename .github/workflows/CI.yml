@@ -37,3 +37,4 @@ jobs:
           npm run docs
           git add --force docs
           git commit -m "chore: github documentation update"
+          git push
