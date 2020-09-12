@@ -3,14 +3,17 @@
   "version": "0.1.2",
   "description": "Marvelous Interactive Storytelling Tools",
   "scripts": {
-    "build": "node_modules/.bin/lerna run build",
+    "build": "lerna run build",
     "test": "lerna run test",
-    "version": "node_modules/.bin/lerna version --conventional-commits --yes",
+    "version": "lerna version --conventional-commits --yes",
     "checks": "run-p format:checks checks:packages",
-    "checks:packages": "node_modules/.bin/lerna run checks",
-    "format": "node_modules/.bin/prettier packages/**/src/**/* --write",
-    "format:checks": "node_modules/.bin/prettier packages/**/src/**/* --check",
-    "bootstrap": "node_modules/.bin/lerna bootstrap --hoist"
+    "checks:packages": "lerna run checks",
+    "format": "prettier packages/**/src/**/* --write",
+    "format:checks": "prettier packages/**/src/**/* --check",
+    "bootstrap": "lerna bootstrap --hoist",
+    "lerna": "node_modules/.bin/lerna",
+    "prettier": "node_modules/.bin/prettier",
+    "docs": "lerna run docs"
   },
   "repository": {
     "type": "git",

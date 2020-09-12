@@ -16,14 +16,21 @@ jobs:
       - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
-      - name: CI Build
-        run: | 
+          node-version: 14.x
+      - name: setup
+      - run: |
           npm install
           npm run bootstrap
           git reset --hard
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          npm run build --if-present
-          npm test --if-present
-          npm run version --if-present
+      - name: checks
+      - run: |
+          npm run checks
+          npm test
+      - name: build
+      - run: npm run build
+      - name: documentation
+      - run: npm run docs
+      - name: publish
+      - run: npm run version

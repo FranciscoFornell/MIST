@@ -1,0 +1,26 @@
+{
+  "source": {
+    "include": ["src"],
+    "includePattern": "^.*\\.js$",
+    "excludePattern": "(^.*\\.test\\.js$)"
+  },
+  "opts": {
+    "template": "../../node_modules/better-docs",
+    "encoding": "utf8",
+    "destination": "../../docs/",
+    "recurse": true,
+    "package": "package.json"
+  },
+  "templates": {
+    "better-docs": {
+      "name": "Ink Story Manager",
+      "title": "Docs: Ink Story Manager",
+      "navLinks": [
+        {
+          "label": "Github",
+          "href": "https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-manager"
+        }
+      ]
+    }
+  }
+}

@@ -6,4 +6,7 @@ A javascript library for managing Inkle's Ink stories
 
 > TODO: Add instructions here
 > TODO: Remember inkjs is a peer dependency
-> TODO: Link API documentation too
+
+## Documentation
+
+You can find more detailed documentation [here](https://franciscofornell.github.io/MIST/ink-story-manager/latest).
