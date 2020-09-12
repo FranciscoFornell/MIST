@@ -17,20 +17,23 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
-      - name: setup
-      - run: |
+      - name: Setup
+        run: |
           npm install
           npm run bootstrap
           git reset --hard
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-      - name: checks
-      - run: |
+      - name: Run checks
+        run: |
           npm run checks
           npm test
-      - name: build
-      - run: npm run build
-      - name: documentation
-      - run: npm run docs
-      - name: publish
-      - run: npm run version
+      - name: Build
+        run: npm run build
+      - name: Generate documentation
+        run: |
+          npm run docs
+          git add --force docs
+          git commit -m "Github actions: Documentation update"
+      - name: Publish
+        run: npm run version
