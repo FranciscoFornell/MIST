@@ -32,24 +32,6 @@ jobs:
         run: npm run build
       - name: Publish
         run: npm run version
-
-  documentation:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 14.x
-      - name: Setup
-        run: |
-          npm install
-          npm run bootstrap
-          git reset --hard
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
       - name: Generate documentation
         run: |
           npm run docs
