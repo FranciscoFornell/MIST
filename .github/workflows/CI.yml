@@ -54,4 +54,4 @@ jobs:
         run: |
           npm run docs
           git add --force docs
-          git commit -m "Github actions: Documentation update"
+          git commit -m "chore: github documentation update"
