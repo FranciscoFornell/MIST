@@ -32,7 +32,7 @@ jobs:
         run: npm run build
       - name: Publish
         run: npm run version
-        
+
   documentation:
     needs: build
     runs-on: ubuntu-latest
@@ -54,4 +54,4 @@ jobs:
         run: |
           npm run docs
           git add --force docs
-          git commit -m "Github actions: Documentation update"
+          git commit -m "chore: github documentation update"
