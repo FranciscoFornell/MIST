@@ -35,6 +35,7 @@ jobs:
       - name: Generate documentation
         run: |
           npm run docs
+          for PACKAGE in $(ls docs); do git diff --quiet docs/$PACKAGE/latest || (cd packages/$PACKAGE; npm run docs:version; cd ../..;) done
           git add --force docs
-          git commit -m "chore: github documentation update"
+          git commit -m "chore: github action - documentation update"
           git push
