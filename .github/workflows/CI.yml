@@ -27,7 +27,9 @@ jobs:
       - name: Run checks
         run: |
           npm run checks
-          npm test
+          npm run test:ci
+          git diff --quiet docs/*/badges
+          $? || (git add --force docs/*/badges; git commit -m "chore: github action - coverage badges update"; git push)
       - name: Build
         run: npm run build
       - name: Publish
