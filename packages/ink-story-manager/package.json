@@ -29,6 +29,8 @@
     "lint": "node_modules/.bin/eslint src/**",
     "test": "jest",
     "test:coverage": "jest --coverage",
+    "test:badges": "jest-coverage-badges output \"../../docs/ink-story-manager/badges\"",
+    "test:ci": "run-s test:coverage test:badges",
     "test:watch": "jest --watch",
     "checks": "run-p lint test",
     "docs:version": "jsdoc -c jsdoc.json -d ../../docs -p package.json",

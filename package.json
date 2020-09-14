@@ -5,6 +5,7 @@
   "scripts": {
     "build": "lerna run build",
     "test": "lerna run test",
+    "test:ci": "lerna run test:ci",
     "version": "lerna version --conventional-commits --yes",
     "checks": "run-p format:checks checks:packages",
     "checks:packages": "lerna run checks",
