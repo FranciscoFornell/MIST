@@ -20,7 +20,7 @@ jobs:
       - name: Setup
         run: |
           npm install
-          npm run bootstrap
+          npm run lerna:bootstrap
           git reset --hard
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"

@@ -21,7 +21,7 @@ module.exports = {
   plugins: [new CleanWebpackPlugin()],
   devtool: 'source-map',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../dist'),
     filename: 'ink-story-manager.min.js',
     library: 'InkStoryManager',
     libraryTarget: 'umd',

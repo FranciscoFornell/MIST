@@ -11,8 +11,9 @@
     "checks:packages": "lerna run checks",
     "format": "prettier packages/**/src/**/* --write",
     "format:checks": "prettier packages/**/src/**/* --check",
-    "bootstrap": "lerna bootstrap --hoist",
     "lerna": "node_modules/.bin/lerna",
+    "lerna:clean": "node_modules/.bin/lerna clean --yes",
+    "lerna:bootstrap": "lerna bootstrap --hoist",
     "prettier": "node_modules/.bin/prettier",
     "docs": "lerna run docs"
   },

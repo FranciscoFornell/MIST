@@ -19,6 +19,6 @@ jobs:
       - name: Setup
         run: |
           npm install
-          npm run bootstrap
+          npm run lerna:bootstrap
       - name: Run checks
         run: npm run checks
