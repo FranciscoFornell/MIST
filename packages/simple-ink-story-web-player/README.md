@@ -7,7 +7,8 @@ A [React](https://es.reactjs.org/) component for playing Inkle's Ink stories
 ## Usage
 
 > TODO: Add instructions here
-> TODO: Remember react is a peer dependency
+
+> TODO: Remember react and inkjs are peer dependencies
 
 ## Documentation
 

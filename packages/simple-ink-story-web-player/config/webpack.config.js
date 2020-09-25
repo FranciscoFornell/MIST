@@ -27,11 +27,17 @@ module.exports = {
     libraryTarget: 'umd',
   },
   externals: {
-    inkjs: {
+    react: {
       commonjs: 'react',
       commonjs2: 'react',
       amd: 'react',
       root: 'react',
+    },
+    inkjs: {
+      commonjs: 'inkjs',
+      commonjs2: 'inkjs',
+      amd: 'inkjs',
+      root: 'inkjs',
     },
   },
 };
