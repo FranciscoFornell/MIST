@@ -43,7 +43,7 @@ const ContinueMaximally = jest.fn(() => {
   return lines.join('\n');
 });
 
-const ChooseChoiceIndex = jest.fn((index) => {
+const ChooseChoiceIndex = jest.fn(() => {
   currentChoices = [];
 });
 
