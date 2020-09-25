@@ -67,6 +67,7 @@
     "eslint-plugin-react": "^7.21.1",
     "jest": "^26.4.2",
     "jest-coverage-badges": "^1.1.2",
+    "jest-serializer-html": "^7.0.0",
     "jsdoc": "^3.6.5",
     "livereload": "^0.9.1",
     "local-web-server": "^4.2.1",
@@ -104,6 +105,9 @@
     ],
     "roots": [
       "<rootDir>/src/"
+    ],
+    "snapshotSerializers": [
+      "jest-serializer-html"
     ]
   },
   "dependencies": {
