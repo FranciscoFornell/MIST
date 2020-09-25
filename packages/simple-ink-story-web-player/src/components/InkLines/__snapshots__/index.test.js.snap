@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InkLines component should render no lines if an ampty lines array is given 1`] = `""`;
+
+exports[`InkLines component should render the lines correctly 1`] = `
+<p>
+  Line 1
+</p>
+<p>
+  Line 2
+</p>
+<p>
+  Line 3
+</p>
+`;
