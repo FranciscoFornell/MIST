@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InkButton component should render correctly with the given label 1`] = `
+<button>
+  Test Label
+</button>
+`;
+
+exports[`InkButton component should render with no text if no label is given 1`] = `
+<button>
+</button>
+`;
