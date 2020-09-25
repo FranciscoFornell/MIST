@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InkChoices component should render as many buttons as choices are given 1`] = `
+<button>
+  text 1
+</button>
+<button>
+  text 2
+</button>
+`;
+
+exports[`InkChoices component should render no buttons if no choices are given 1`] = `""`;
