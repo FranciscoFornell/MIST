@@ -8,7 +8,7 @@ A [React](https://es.reactjs.org/) component for playing Inkle's Ink stories
 
 > TODO: Add instructions here
 
-> TODO: Remember react and inkjs are peer dependencies
+> TODO: Remember react, prop-types and inkjs are peer dependencies
 
 ## Documentation
 

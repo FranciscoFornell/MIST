@@ -106,6 +106,7 @@
   },
   "dependencies": {
     "inkjs": "^1.11.0",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1"
   }
 }
