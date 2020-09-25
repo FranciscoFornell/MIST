@@ -18,11 +18,15 @@ module.exports = {
     encoding: 'utf8',
     recurse: true,
   },
+  tags: {
+    allowUnknownTags: ['component'],
+  },
+  plugins: ['../../node_modules/better-docs/component'],
   templates: {
     default: defaultTemplate,
     'better-docs': {
-      name: 'Ink Story Manager',
-      title: 'Docs: Ink Story Manager',
+      name: 'Simple Ink Story Web Player',
+      title: 'Docs: Simple Ink Story Web Player',
       navLinks: [
         {
           label: 'Github',
