@@ -39,5 +39,11 @@ module.exports = {
       amd: 'inkjs',
       root: 'inkjs',
     },
+    'prop-types': {
+      commonjs: 'prop-types',
+      commonjs2: 'prop-types',
+      amd: 'prop-types',
+      root: 'prop-types',
+    },
   },
 };
