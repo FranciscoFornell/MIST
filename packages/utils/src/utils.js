@@ -1,0 +1,3 @@
+const exampleMethod = () => {};
+
+export { exampleMethod };
