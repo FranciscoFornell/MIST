@@ -1,24 +1,19 @@
 {
-  "name": "ink-story-manager",
-  "version": "0.1.11",
+  "name": "utils",
+  "version": "1.0.1",
   "private": true,
-  "description": "Library for managing Inkle's Ink stories.",
+  "description": "Private package for common utilities across MIST monorepo.",
   "keywords": [
-    "ink",
-    "inkle"
+    "utils"
   ],
   "author": "Francisco Fornell <fco.fornell@gmail.com>",
-  "homepage": "https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-manager#readme",
+  "homepage": "https://github.com/FranciscoFornell/MIST/tree/master/packages/utils#readme",
   "license": "MIT",
-  "main": "dist/ink-story-manager.min.js",
-  "module": "src/index.js",
-  "directories": {
-    "src": "src",
-    "dist": "dist"
-  },
+  "main": "dist/utils.min.js",
+  "module": "src/utils.js",
   "files": [
-    "src",
-    "dist"
+    "dist",
+    "src"
   ],
   "repository": {
     "type": "git",
@@ -30,20 +25,20 @@
     "lint": "node_modules/.bin/eslint src/**",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:badges": "jest-coverage-badges output \"../../docs/ink-story-manager/badges\"",
+    "test:badges": "jest-coverage-badges output \"../../docs/utils/badges\"",
     "test:ci": "run-s test:coverage test:badges",
     "test:watch": "jest --watch",
     "checks": "run-p lint test",
     "docs": "run-s docs:clean-latest docs:build-latest",
     "docs:version": "jsdoc -c config/jsdoc/jsdoc.js -d ../../docs -p package.json",
-    "docs:clean-latest": "rimraf ../../docs/ink-story-manager/latest",
-    "docs:build-latest": "jsdoc -c config/jsdoc/jsdoc.js -d ../../docs/ink-story-manager/latest",
+    "docs:clean-latest": "rimraf ../../docs/utils/latest",
+    "docs:build-latest": "jsdoc -c config/jsdoc/jsdoc.js -d ../../docs/utils/latest",
     "docs:build-dev": "node_modules/.bin/cross-env NODE_ENV=\"development\" npm run docs:build-latest",
     "docs:watch-src": "node_modules/.bin/nodemon --exec npm run docs:on-watch-src --watch src",
     "docs:on-watch-src": "run-s lint docs:build-dev",
-    "docs:watch-output": "livereload \"../../docs/ink-story-manager/latest/\"",
+    "docs:watch-output": "livereload \"../../docs/utils/latest/\"",
     "docs:watch": "run-p docs:watch-src docs:watch-output docs:serve",
-    "docs:serve": "node_modules/.bin/ws -d ../../docs/ink-story-manager/latest --open",
+    "docs:serve": "node_modules/.bin/ws -d ../../docs/utils/latest --open",
     "docs:dev": "run-s docs:build-dev docs:watch"
   },
   "bugs": {
@@ -52,7 +47,6 @@
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/eslint-parser": "^7.11.5",
-    "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.11.5",
     "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
@@ -99,8 +93,5 @@
     "roots": [
       "<rootDir>/src/"
     ]
-  },
-  "dependencies": {
-    "inkjs": "^1.11.0"
   }
 }
