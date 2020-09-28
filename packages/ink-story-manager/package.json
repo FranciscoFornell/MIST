@@ -30,7 +30,7 @@
     "build": "node_modules/.bin/webpack --config config/webpack.config.js",
     "postbuild": "run-s types:clean types:generate",
     "types:clean": "rimraf dist/*.d.ts",
-    "types:generate": "node_modules/.bin/tsc -p ./",
+    "types:generate": "node_modules/.bin/tsc",
     "lint": "node_modules/.bin/eslint src/**",
     "test": "jest",
     "test:coverage": "jest --coverage",
