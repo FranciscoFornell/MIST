@@ -1,6 +1,6 @@
 {
   "name": "simple-ink-story-web-player",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "description": "React component for playong Inkle's Ink stories.",
   "keywords": [
