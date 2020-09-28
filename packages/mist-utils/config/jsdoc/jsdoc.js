@@ -21,13 +21,13 @@ module.exports = {
   templates: {
     default: defaultTemplate,
     'better-docs': {
-      name: 'Utils',
-      title: 'Docs: Utils',
+      name: 'MIST Utils',
+      title: 'Docs: MIST Utils',
       navLinks: [
         {
           label: 'Github',
           href:
-            'https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-manager',
+            'https://github.com/FranciscoFornell/MIST/tree/master/packages/mist-utils',
         },
       ],
     },
