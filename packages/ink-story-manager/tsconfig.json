@@ -1,0 +1,12 @@
+{
+  "include": ["src"],
+  "exclude": ["**/*.test.js", "**/*.d.ts", "**/__mocks__"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "noImplicitAny": true,
+    "allowJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true
+  }
+}
