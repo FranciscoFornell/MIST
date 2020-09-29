@@ -22,16 +22,28 @@ module.exports = {
   devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: 'simple-ink-story-web-player.min.js',
+    filename: 'ink-story-web-player.min.js',
     library: 'InkStoryManager',
     libraryTarget: 'umd',
   },
   externals: {
-    inkjs: {
+    react: {
       commonjs: 'react',
       commonjs2: 'react',
       amd: 'react',
       root: 'react',
+    },
+    inkjs: {
+      commonjs: 'inkjs',
+      commonjs2: 'inkjs',
+      amd: 'inkjs',
+      root: 'inkjs',
+    },
+    'prop-types': {
+      commonjs: 'prop-types',
+      commonjs2: 'prop-types',
+      amd: 'prop-types',
+      root: 'prop-types',
     },
   },
 };

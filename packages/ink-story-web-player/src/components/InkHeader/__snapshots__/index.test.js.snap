@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InkHeader component should render no author if no author is given 1`] = `
+<h2>
+  Title
+</h2>
+`;
+
+exports[`InkHeader component should render no title if no title is given 1`] = `
+<h4>
+  Author Name
+</h4>
+`;
+
+exports[`InkHeader component should render the header info correctly 1`] = `
+<h2>
+  Title
+</h2>
+<h4>
+  Author Name
+</h4>
+`;

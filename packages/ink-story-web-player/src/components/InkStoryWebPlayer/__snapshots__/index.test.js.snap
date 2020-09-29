@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InkStory component Whe the user clicks on choice button should render accordingly 1`] = `
+<div>
+  <h2>
+    Story Title
+  </h2>
+  <h4>
+    Author Name
+  </h4>
+  <p>
+    Line 1
+  </p>
+  <p>
+    Line 2
+  </p>
+  <p>
+    Line 3
+  </p>
+  <button>
+    &lt;&lt;
+  </button>
+  <button>
+    Choice 1
+  </button>
+  <button>
+    Choice 2
+  </button>
+  <button>
+    Choice 3
+  </button>
+  <button>
+    Choice 4
+  </button>
+</div>
+`;
+
+exports[`InkStory component Whe the user clicks on continue should render correctly with lines, choices, and rewind button 1`] = `
+<div>
+  <h2>
+    Story Title
+  </h2>
+  <h4>
+    Author Name
+  </h4>
+  <p>
+    Line 1
+  </p>
+  <p>
+    Line 2
+  </p>
+  <p>
+    Line 3
+  </p>
+  <button>
+    &lt;&lt;
+  </button>
+  <button>
+    Choice 1
+  </button>
+  <button>
+    Choice 2
+  </button>
+</div>
+`;
+
+exports[`InkStory component should render correctly the initial state 1`] = `
+<div>
+  <h2>
+    Story Title
+  </h2>
+  <h4>
+    Author Name
+  </h4>
+  <button>
+    Continue
+  </button>
+</div>
+`;

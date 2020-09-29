@@ -18,16 +18,20 @@ module.exports = {
     encoding: 'utf8',
     recurse: true,
   },
+  tags: {
+    allowUnknownTags: ['component'],
+  },
+  plugins: ['../../node_modules/better-docs/component'],
   templates: {
     default: defaultTemplate,
     'better-docs': {
-      name: 'Ink Story Manager',
-      title: 'Docs: Ink Story Manager',
+      name: 'Simple Ink Story Web Player',
+      title: 'Docs: Simple Ink Story Web Player',
       navLinks: [
         {
           label: 'Github',
           href:
-            'https://github.com/FranciscoFornell/MIST/tree/master/packages/simple-ink-story-web-player',
+            'https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-web-player',
         },
       ],
     },

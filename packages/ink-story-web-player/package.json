@@ -1,17 +1,17 @@
 {
-  "name": "simple-ink-story-web-player",
+  "name": "ink-story-web-player",
   "version": "0.1.2",
   "private": true,
-  "description": "React component for playong Inkle's Ink stories.",
+  "description": "React component for playing Inkle's Ink stories.",
   "keywords": [
     "ink",
     "inkle",
     "react"
   ],
   "author": "Francisco Fornell <fco.fornell@gmail.com>",
-  "homepage": "https://github.com/FranciscoFornell/MIST/tree/master/packages/simple-ink-story-web-player#readme",
+  "homepage": "https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-web-player#readme",
   "license": "MIT",
-  "main": "dist/simple-ink-story-web-player.min.js",
+  "main": "dist/ink-story-web-player.min.js",
   "module": "src/index.js",
   "directories": {
     "src": "src",
@@ -31,20 +31,20 @@
     "lint": "node_modules/.bin/eslint src/**",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:badges": "jest-coverage-badges output \"../../docs/simple-ink-story-web-player/badges\"",
+    "test:badges": "jest-coverage-badges output \"../../docs/ink-story-web-player/badges\"",
     "test:ci": "run-s test:coverage test:badges",
     "test:watch": "jest --watch",
     "checks": "run-p lint test",
     "docs": "run-s docs:clean-latest docs:build-latest",
     "docs:version": "jsdoc -c config/jsdoc/jsdoc.js -d ../../docs -p package.json",
-    "docs:clean-latest": "rimraf ../../docs/simple-ink-story-web-player/latest",
-    "docs:build-latest": "jsdoc -c config/jsdoc/jsdoc.js -d ../../docs/simple-ink-story-web-player/latest",
+    "docs:clean-latest": "rimraf ../../docs/ink-story-web-player/latest",
+    "docs:build-latest": "jsdoc -c config/jsdoc/jsdoc.js -d ../../docs/ink-story-web-player/latest",
     "docs:build-dev": "node_modules/.bin/cross-env NODE_ENV=\"development\" npm run docs:build-latest",
     "docs:watch-src": "node_modules/.bin/nodemon --exec npm run docs:on-watch-src --watch src",
     "docs:on-watch-src": "run-s lint docs:build-dev",
-    "docs:watch-output": "livereload \"../../docs/simple-ink-story-web-player/latest/\"",
+    "docs:watch-output": "livereload \"../../docs/ink-story-web-player/latest/\"",
     "docs:watch": "run-p docs:watch-src docs:watch-output docs:serve",
-    "docs:serve": "node_modules/.bin/ws -d ../../docs/simple-ink-story-web-player/latest --open",
+    "docs:serve": "node_modules/.bin/ws -d ../../docs/ink-story-web-player/latest --open",
     "docs:dev": "run-s docs:build-dev docs:watch"
   },
   "bugs": {
@@ -56,6 +56,7 @@
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
+    "@testing-library/react": "^11.0.4",
     "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
     "better-docs": "^2.3.2",
@@ -66,12 +67,14 @@
     "eslint-plugin-react": "^7.21.1",
     "jest": "^26.4.2",
     "jest-coverage-badges": "^1.1.2",
+    "jest-serializer-html": "^7.0.0",
     "jsdoc": "^3.6.5",
     "livereload": "^0.9.1",
     "local-web-server": "^4.2.1",
     "nodemon": "^2.0.4",
     "npm-run-all": "^4.1.5",
     "parcel": "^1.12.4",
+    "react-dom": "^16.13.1",
     "rimraf": "^3.0.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
@@ -84,14 +87,14 @@
       "text"
     ],
     "collectCoverageFrom": [
-      "src/*.js"
+      "src/**/*.js"
     ],
     "coverageThreshold": {
       "global": {
-        "branches": 0,
-        "functions": 0,
-        "lines": 0,
-        "statements": 0
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
       }
     },
     "moduleDirectories": [
@@ -102,9 +105,16 @@
     ],
     "roots": [
       "<rootDir>/src/"
+    ],
+    "snapshotSerializers": [
+      "jest-serializer-html"
     ]
   },
   "dependencies": {
-    "react": "^16.13.1"
+    "inkjs": "^1.11.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "ink-story-manager": "~0.1.0",
+    "mist-utils": "~1.0.0"
   }
 }
