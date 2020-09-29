@@ -25,8 +25,8 @@ module.exports = {
   templates: {
     default: defaultTemplate,
     'better-docs': {
-      name: 'Simple Ink Story Web Player',
-      title: 'Docs: Simple Ink Story Web Player',
+      name: 'Ink Story Web Player',
+      title: 'Docs: Ink Story Web Player',
       navLinks: [
         {
           label: 'Github',
