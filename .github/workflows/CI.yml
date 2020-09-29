@@ -33,6 +33,7 @@ jobs:
           git fetch
           git checkout docs
           git stash pop
+          git checkout --theirs -- docs
           git diff --cached --quiet docs/*/badges || (git commit -m "chore: github action - coverage badges update"; git push)
           git checkout master
       - name: Build
