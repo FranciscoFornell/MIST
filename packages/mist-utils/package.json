@@ -1,6 +1,6 @@
 {
   "name": "mist-utils",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "private": true,
   "description": "Private package for common utilities across MIST monorepo.",
   "keywords": [
