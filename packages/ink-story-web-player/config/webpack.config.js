@@ -22,7 +22,7 @@ module.exports = {
   devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: 'simple-ink-story-web-player.min.js',
+    filename: 'ink-story-web-player.min.js',
     library: 'InkStoryManager',
     libraryTarget: 'umd',
   },
