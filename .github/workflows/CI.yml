@@ -32,8 +32,8 @@ jobs:
           git stash
           git fetch
           git checkout docs
-          git stash pop --quiet
-          git checkout --theirs -- docs
+          git stash pop --quier || true
+          git checkout --theirs -- docs || true
           git diff --cached --quiet docs/*/badges || (git commit -m "chore: github action - coverage badges update"; git push)
           git checkout master
       - name: Build
@@ -46,8 +46,8 @@ jobs:
           git add docs --force
           git stash
           git checkout docs
-          git stash pop --quiet
-          git checkout --theirs -- docs
+          git stash pop --quiet || true
+          git checkout --theirs -- docs || true
           git reset
           for PACKAGE in $(ls docs); do (git diff --quiet docs/$PACKAGE/latest || git add docs/$PACKAGE) done
           git diff --cached --quiet docs || (git commit -m "chore: github action - documentation update"; git push)
