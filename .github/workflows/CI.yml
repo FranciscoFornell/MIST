@@ -39,6 +39,6 @@ jobs:
         run: |
           npm run docs
           git add docs --force && git stash && git checkout docs && git stash pop && git checkout --theirs ./docs && git reset
-          for PACKAGE in $(ls docs); do git diff --quiet docs/$PACKAGE/latest || git add docs/$PACKAGE done
+          for PACKAGE in $(ls docs); do (git diff --quiet docs/$PACKAGE/latest || git add docs/$PACKAGE) done
           git diff --cached --quiet docs || (git commit -m "chore: github action - documentation update"; git push)
           git checkout master
