@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,11 +5,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< Updated upstream
-  <title>Docs: Simple Ink Story Web Player InkStoryWebPlayer/index.js</title>
-=======
-  <title>Docs: Ink Story Web Player InkStoryWebPlayer/index.js</title>
->>>>>>> Stashed changes
+  <title>Docs: Ink Story Web Player InkHeader</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -48,11 +42,7 @@
             
              
                 <a href="index.html">
-<<<<<<< Updated upstream
-                    <h1 class="navbar-item">Simple Ink Story Web Player</h1>
-=======
                     <h1 class="navbar-item">Ink Story Web Player</h1>
->>>>>>> Stashed changes
                 </a>
             
         </div>
@@ -96,98 +86,222 @@
         <div class="core" id="main-content-wrapper">
             <div class="content">
                 <header class="page-title">
-                    <p>Source</p>
-                    <h1>InkStoryWebPlayer/index.js</h1>
+                    <p>Components</p>
+                    <h1>InkHeader</h1>
                 </header>
                 
 
 
 
+
+<section>
+
+<header>
     
-    <section>
-        <article>
-            <pre class="prettyprint source linenums"><code>import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import InkHeader from '../InkHeader';
-import InkLines from '../InkLines';
-import InkChoices from '../InkChoices';
-import InkButton from '../InkButton';
-import { pick } from 'mist-utils';
-import InkStoryManager from 'ink-story-manager';
+        <h2>
+            &ltInkHeader <i>title</i> <i>author</i> /&gt
+        </h2>
+        
+    
+</header>
 
-/**
- * Ink Story Web Player
- * @component
- * @example
- * const props = {
- *   storyContent: {"inkVersion":19,"root":[[{"#":"title: InkStory component example"},{"#":"author: John Doe"},{"#":"defaultContinueText: Continue"},{"#":"continueMaximally"},"^Line 1","\n","^Line 2","\n","^Line 3","\n","ev","str","^Choice 1","/str","/ev",{"*":"0.c-0","flg":20},"ev","str","^Choice 2","/str","/ev",{"*":"0.c-1","flg":20},{"c-0":["\n","^You choosed 1","\n",{"->":"0.g-0"},{"#f":5}],"c-1":["\n","^You choosed 2","\n",{"->":"0.g-0"},{"#f":5}],"g-0":["^Line 4","\n","end",["done",{"#n":"g-1"}],null]}],"done",null],"listDefs":{}},
- * };
- *
- * return (&lt;div style={{minHeight: '150px'}}>
- *   &lt;InkStoryWebPlayer {...props} />
- * &lt;/div>);
- */
-const InkStoryWebPlayer = ({ storyContent }) => {
-  const [storyManager, setStoryManager] = useState();
-  const [lines, setLines] = useState([]);
-  const [canContinue, setCanContinue] = useState(true);
-  const [choices, setChoices] = useState([]);
+<article>
+    <div class="container-overview">
+    
+        
+            <div class='vertical-section'>
+                <div class="members">
+                    <div class="member">
+                        <div class=name>
+                            <span class="tag">Constructor</span>
+                        </div>
+                        
 
-  useEffect(() => {
-    setStoryManager(new InkStoryManager(storyContent));
-  }, []);
 
-  const updateState = (getter) => {
-    const { historyLines, canContinue, currentChoices } = getter();
+    
+    <h4 class="name" id="InkHeader">
+        <a class="href-link" href="#InkHeader">#</a>
+        
+        <span class="code-name">
+            
+                &ltInkHeader <i>title</i> <i>author</i> /&gt
+            
+        </span>
+    </h4>
+    
 
-    setLines(historyLines);
-    setCanContinue(canContinue);
-    setChoices(currentChoices);
-  };
+    
+    
+    <div class="description">
+        Simple Ink Web Player Header
+    </div>
+    
 
-  const continueStory = (choiceIndex) => {
-    updateState(() => storyManager.continueStory(choiceIndex));
-  };
 
-  const rewind = () => {
-    updateState(() => storyManager.rewind());
-  };
 
-  return (
-    &lt;React.Fragment>
-      {storyManager &amp;&amp; (
-        &lt;React.Fragment>
-          &lt;InkHeader {...pick(storyManager.globalTags, 'title', 'author')} />
-          &lt;InkLines lines={lines} />
-          {storyManager.canRewind &amp;&amp; (
-            &lt;InkButton label={'&lt;&lt;'} onClick={() => rewind()} />
-          )}
-          {canContinue &amp;&amp; (
-            &lt;InkButton
-              onClick={() => continueStory()}
-              label={storyManager.globalTags.defaultContinueText}
-            />
-          )}
-          {choices.length > 0 &amp;&amp; (
-            &lt;InkChoices choices={choices} clickHandler={continueStory} />
-          )}
-        &lt;/React.Fragment>
-      )}
-    &lt;/React.Fragment>
-  );
-};
 
-InkStoryWebPlayer.propTypes = {
-  /**
-   * Inkle's ink story in json format
-   */
-  storyContent: PropTypes.object.isRequired,
-};
 
-export default InkStoryWebPlayer;
-</code></pre>
-        </article>
-    </section>
+
+
+    
+        <h5>PropTypes:</h5>
+        
+<div class="table-container">
+  <table class="params table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Description</th>
+        <th class="last">Default</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+          <tr class="deep-level-0">
+            <td class="name"><code>title</code></td>
+            <td>
+              string
+            </td>
+            <td>No</td>
+            <td>The title of the Ink</td>
+            <td></td>
+          </tr>
+          
+    
+          <tr class="deep-level-0">
+            <td class="name"><code>author</code></td>
+            <td>
+              string
+            </td>
+            <td>No</td>
+            <td>The author of the ink</td>
+            <td></td>
+          </tr>
+          
+    
+    </tbody>
+  </table>
+</div>
+    
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="InkHeader_index.js.html" class="button">View Source</a>
+            <span>
+                <a href="InkHeader_index.js.html">InkHeader/index.js</a>, <a href="InkHeader_index.js.html#line16">line 16</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        
+
+<div id='component0'></div>
+
+<script>
+  ReactDOM.render(ReactWrapper({
+    example: "return (\n  <InkHeader\n    title=\"Ink Title\"\n    author=\"Ink Author Name\"\n  />\n);",
+    uniqId: "component0",
+  }), document.getElementById('component0'));
+</script>
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+        
+    
+    </div>
+    
+        
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
 
 
 

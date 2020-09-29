@@ -5,15 +5,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  <title>Docs: Utils Utils</title>
-=======
-  <title>Docs: MIST Utils Utils</title>
->>>>>>> Stashed changes
-=======
-  <title>Docs: MIST Utils Utils</title>
->>>>>>> Stashed changes
+  <title>Docs: Ink Story Manager InkStoryManager</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -50,15 +42,7 @@
             
              
                 <a href="index.html">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                    <h1 class="navbar-item">Utils</h1>
-=======
-                    <h1 class="navbar-item">MIST Utils</h1>
->>>>>>> Stashed changes
-=======
-                    <h1 class="navbar-item">MIST Utils</h1>
->>>>>>> Stashed changes
+                    <h1 class="navbar-item">Ink Story Manager</h1>
                 </a>
             
         </div>
@@ -76,15 +60,7 @@
                     
                         <a
                             class="link user-link "
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
                             href="https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-manager"
-=======
-                            href="https://github.com/FranciscoFornell/MIST/tree/master/packages/mist-utils"
->>>>>>> Stashed changes
-=======
-                            href="https://github.com/FranciscoFornell/MIST/tree/master/packages/mist-utils"
->>>>>>> Stashed changes
                         >
                             Github
                         </a>
@@ -103,7 +79,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Modules</h3><ul><li><a href="module-Utils.html">Utils</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Modules</h3><ul><li><a href="module-InkStoryManager.html">InkStoryManager</a></li></ul><h3>Classes</h3><ul><li><a href="module-InkStoryManager-InkStoryManager.html">InkStoryManager</a></li></ul></div>
                 
             </nav>
         </div>
@@ -111,7 +87,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Module</p>
-                    <h1>Utils</h1>
+                    <h1>InkStoryManager</h1>
                 </header>
                 
 
@@ -132,7 +108,7 @@
     <div class="container-overview">
     
         
-            <div class="description">Utils module.</div>
+            <div class="description">InkStoryManager module.</div>
         
 
         
@@ -184,9 +160,9 @@
 
     
         <p class="tag-source">
-            <a href="utils.js.html" class="button">View Source</a>
+            <a href="ink-story-manager.js.html" class="button">View Source</a>
             <span>
-                <a href="utils.js.html">utils.js</a>, <a href="utils.js.html#line1">line 1</a>
+                <a href="ink-story-manager.js.html">ink-story-manager.js</a>, <a href="ink-story-manager.js.html#line1">line 1</a>
             </span>
         </p>
     
@@ -219,6 +195,15 @@
     
     
 
+    
+
+    
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="module-InkStoryManager-InkStoryManager.html">InkStoryManager</a></dt>
+            <dd></dd>
+        </dl>
     
 
     
@@ -233,47 +218,44 @@
 
     
         <div class='vertical-section'>
-            <h1>Methods</h1>
+            <h1>Type Definitions</h1>
             <div class="members">
             
                 <div class="member">
 
-
-    
-    <h4 class="name" id="~pick">
-        <a class="href-link" href="#~pick">#</a>
+    <span class="method-parameter is-pulled-right">
+        <label>Type:</label>
         
-            
-                <span class='tag'>inner</span>
-            
-        
-        <span class="code-name">
-            
-                pick<span class="signature">(obj, &hellip;property)</span><span class="type-signature"> &rarr; {Object}</span>
-            
-        </span>
-    </h4>
+<span class="param-type">Object</span>
+
+
+    </span>
+
+<h4 class="name" id="~Choice">
+    <a class="href-link" href="#~Choice">#</a>
     
-
+    <span class="code-name">
+        Choice
+    </span>
     
-    
-    <div class="description">
-        Takes an object and a whitelist of properties names, and returns a new object with only the whitelisted properties
-    </div>
-    
+</h4>
+
+
+
+
+<div class="description">
+    An Ink choice
+</div>
 
 
 
 
 
+    <h5 class="subsection-title">Properties:</h5>
 
-
-
-
-    <h5>Parameters:</h5>
     
 <div class="table-container">
-    <table class="params table">
+    <table class="props table">
         <thead>
         <tr>
             
@@ -282,8 +264,6 @@
 
             <th>Type</th>
 
-            
-            <th>Attributes</th>
             
 
             
@@ -294,79 +274,55 @@
 
         <tbody>
         
-
             
 <tr class="deep-level-0">
-  
-      <td class="name"><code>obj</code></td>
-  
+    
+        <td class="name"><code>index</code></td>
+    
 
-  <td class="type">
-  
-      
-<span class="param-type">Object</span>
+    <td class="type">
+    
+        
+<span class="param-type">number</span>
 
 
-  
-  </td>
+    
+    </td>
 
-  
-      <td class="attributes">
-      
+    
 
-      
+    
 
-      
-      </td>
-  
-
-  
-
-  <td class="description last">The origin object</td>
+    <td class="description last">The choice index, starting in 1</td>
 </tr>
 
-
         
-
             
 <tr class="deep-level-0">
-  
-      <td class="name"><code>property</code></td>
-  
+    
+        <td class="name"><code>text</code></td>
+    
 
-  <td class="type">
-  
-      
+    <td class="type">
+    
+        
 <span class="param-type">string</span>
 
 
-  
-  </td>
+    
+    </td>
 
-  
-      <td class="attributes">
-      
+    
 
-      
+    
 
-      
-          &lt;repeatable><br>
-      
-      </td>
-  
-
-  
-
-  <td class="description last">a property name to be picked</td>
+    <td class="description last">The choice text</td>
 </tr>
-
 
         
         </tbody>
     </table>
 </div>
-
-
 
 
 
@@ -403,9 +359,9 @@
 
     
         <p class="tag-source">
-            <a href="utils.js.html" class="button">View Source</a>
+            <a href="ink-story-manager.js.html" class="button">View Source</a>
             <span>
-                <a href="utils.js.html">utils.js</a>, <a href="utils.js.html#line11">line 11</a>
+                <a href="ink-story-manager.js.html">ink-story-manager.js</a>, <a href="ink-story-manager.js.html#line12">line 12</a>
             </span>
         </p>
     
@@ -415,43 +371,177 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class='columns method-parameter'>
-        <div class="column is-2"><label>Returns:</label></div>
-        <div class="column is-10">
+</div>
             
-                    
+                <div class="member">
 
-<div class="columns">
-    
-    <div class='param-desc column is-7'>Result object</div>
-    
-    
-    <div class='column is-5 has-text-left'>
-        <label>Type: </label>
+    <span class="method-parameter is-pulled-right">
+        <label>Type:</label>
         
 <span class="param-type">Object</span>
 
 
-    </div>
+    </span>
+
+<h4 class="name" id="~Step">
+    <a class="href-link" href="#~Step">#</a>
     
+    <span class="code-name">
+        Step
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    A step in the story
 </div>
 
-                
-        </div>
-    </div>
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+<div class="table-container">
+    <table class="props table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>canContinue</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">Boolean</span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last">True if the story can continue</td>
+</tr>
+
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>historyLines</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">Array.&lt;string></span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last">All the read lines, including the current one</td>
+</tr>
+
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>currentChoices</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">Array.&lt;<a href="module-InkStoryManager.html#~Choice">module:InkStoryManager~Choice</a>></span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last">Currently available choices, if any</td>
+</tr>
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="ink-story-manager.js.html" class="button">View Source</a>
+            <span>
+                <a href="ink-story-manager.js.html">ink-story-manager.js</a>, <a href="ink-story-manager.js.html#line5">line 5</a>
+            </span>
+        </p>
+    
+</dl>
+
 
 
 
@@ -460,8 +550,6 @@
             
             </div>
         </div>
-    
-
     
 
     
