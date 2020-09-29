@@ -35,7 +35,7 @@ jobs:
           git stash pop --quiet || true
           git checkout --theirs -- docs || true
           git add docs/*/badges
-          git diff --cached --quiet docs/*/badges || (git commit -m "chore: github action - coverage badges update"; git push)
+          git diff --cached --quiet -- docs/*/badges || (git commit -m "chore: github action - coverage badges update"; git push)
           git checkout master
       - name: Build
         run: npm run build
@@ -50,6 +50,7 @@ jobs:
           git stash pop --quiet || true
           git checkout --theirs -- docs || true
           git reset
-          for PACKAGE in $(ls docs); do (git diff --quiet docs/$PACKAGE/latest || git add docs/$PACKAGE) done
-          git diff --cached --quiet -- docs || (git commit -m "chore: github action - documentation update"; git push)
+          for PACKAGE in $(ls docs); do (git diff --quiet -- docs/$PACKAGE/latest || git add docs/$PACKAGE) done
+          git diff --cached --quiet || (git commit -m "chore: github action - documentation update"; git push)
+          git reset --hard
           git checkout master
