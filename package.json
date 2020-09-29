@@ -15,7 +15,9 @@
     "lerna:clean": "node_modules/.bin/lerna clean --yes",
     "lerna:bootstrap": "lerna bootstrap --hoist",
     "prettier": "node_modules/.bin/prettier",
-    "docs": "lerna run docs"
+    "docs": "run-p docs:latest docs:version",
+    "docs:latest": "lerna run docs",
+    "docs:version": "lerna run docs:version"
   },
   "repository": {
     "type": "git",
