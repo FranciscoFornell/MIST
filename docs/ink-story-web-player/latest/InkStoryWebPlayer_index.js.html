@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,11 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< Updated upstream
-  <title>Docs: Utils Home</title>
-=======
-  <title>Docs: MIST Utils Home</title>
->>>>>>> Stashed changes
+  <title>Docs: Simple Ink Story Web Player InkStoryWebPlayer/index.js</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -46,11 +44,7 @@
             
              
                 <a href="index.html">
-<<<<<<< Updated upstream
-                    <h1 class="navbar-item">Utils</h1>
-=======
-                    <h1 class="navbar-item">MIST Utils</h1>
->>>>>>> Stashed changes
+                    <h1 class="navbar-item">Simple Ink Story Web Player</h1>
                 </a>
             
         </div>
@@ -68,11 +62,7 @@
                     
                         <a
                             class="link user-link "
-<<<<<<< Updated upstream
-                            href="https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-manager"
-=======
-                            href="https://github.com/FranciscoFornell/MIST/tree/master/packages/mist-utils"
->>>>>>> Stashed changes
+                            href="https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-web-player"
                         >
                             Github
                         </a>
@@ -91,40 +81,105 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Modules</h3><ul><li><a href="module-Utils.html">Utils</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components</h3><ul><li><a href="InkButton.html">InkButton</a></li><li><a href="InkChoices.html">InkChoices</a></li><li><a href="InkHeader.html">InkHeader</a></li><li><a href="InkLines.html">InkLines</a></li><li><a href="InkStoryWebPlayer.html">InkStoryWebPlayer</a></li></ul></div>
                 
             </nav>
         </div>
         <div class="core" id="main-content-wrapper">
             <div class="content">
                 <header class="page-title">
-                    <p></p>
-                    <h1>Home</h1>
+                    <p>Source</p>
+                    <h1>InkStoryWebPlayer/index.js</h1>
                 </header>
                 
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import InkHeader from '../InkHeader';
+import InkLines from '../InkLines';
+import InkChoices from '../InkChoices';
+import InkButton from '../InkButton';
+import { pick } from 'mist-utils';
+import InkStoryManager from 'ink-story-manager';
 
+/**
+ * Ink Story Web Player
+ * @component
+ * @example
+ * const props = {
+ *   storyContent: {"inkVersion":19,"root":[[{"#":"title: InkStory component example"},{"#":"author: John Doe"},{"#":"defaultContinueText: Continue"},{"#":"continueMaximally"},"^Line 1","\n","^Line 2","\n","^Line 3","\n","ev","str","^Choice 1","/str","/ev",{"*":"0.c-0","flg":20},"ev","str","^Choice 2","/str","/ev",{"*":"0.c-1","flg":20},{"c-0":["\n","^You choosed 1","\n",{"->":"0.g-0"},{"#f":5}],"c-1":["\n","^You choosed 2","\n",{"->":"0.g-0"},{"#f":5}],"g-0":["^Line 4","\n","end",["done",{"#n":"g-1"}],null]}],"done",null],"listDefs":{}},
+ * };
+ *
+ * return (&lt;div style={{minHeight: '150px'}}>
+ *   &lt;InkStoryWebPlayer {...props} />
+ * &lt;/div>);
+ */
+const InkStoryWebPlayer = ({ storyContent }) => {
+  const [storyManager, setStoryManager] = useState();
+  const [lines, setLines] = useState([]);
+  const [canContinue, setCanContinue] = useState(true);
+  const [choices, setChoices] = useState([]);
 
-    <h3> </h3>
+  useEffect(() => {
+    setStoryManager(new InkStoryManager(storyContent));
+  }, []);
 
+  const updateState = (getter) => {
+    const { historyLines, canContinue, currentChoices } = getter();
 
+    setLines(historyLines);
+    setCanContinue(canContinue);
+    setChoices(currentChoices);
+  };
 
+  const continueStory = (choiceIndex) => {
+    updateState(() => storyManager.continueStory(choiceIndex));
+  };
 
+  const rewind = () => {
+    updateState(() => storyManager.rewind());
+  };
 
+  return (
+    &lt;React.Fragment>
+      {storyManager &amp;&amp; (
+        &lt;React.Fragment>
+          &lt;InkHeader {...pick(storyManager.globalTags, 'title', 'author')} />
+          &lt;InkLines lines={lines} />
+          {storyManager.canRewind &amp;&amp; (
+            &lt;InkButton label={'&lt;&lt;'} onClick={() => rewind()} />
+          )}
+          {canContinue &amp;&amp; (
+            &lt;InkButton
+              onClick={() => continueStory()}
+              label={storyManager.globalTags.defaultContinueText}
+            />
+          )}
+          {choices.length > 0 &amp;&amp; (
+            &lt;InkChoices choices={choices} clickHandler={continueStory} />
+          )}
+        &lt;/React.Fragment>
+      )}
+    &lt;/React.Fragment>
+  );
+};
 
+InkStoryWebPlayer.propTypes = {
+  /**
+   * Inkle's ink story in json format
+   */
+  storyContent: PropTypes.object.isRequired,
+};
 
-
-
-
-    
-
-
-
-
-
+export default InkStoryWebPlayer;
+</code></pre>
+        </article>
+    </section>
 
 
 

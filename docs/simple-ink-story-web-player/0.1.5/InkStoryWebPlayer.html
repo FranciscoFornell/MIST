@@ -5,11 +5,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< Updated upstream
-  <title>Docs: Utils Utils</title>
-=======
-  <title>Docs: MIST Utils Utils</title>
->>>>>>> Stashed changes
+  <title>Docs: Simple Ink Story Web Player InkStoryWebPlayer</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -46,11 +42,7 @@
             
              
                 <a href="index.html">
-<<<<<<< Updated upstream
-                    <h1 class="navbar-item">Utils</h1>
-=======
-                    <h1 class="navbar-item">MIST Utils</h1>
->>>>>>> Stashed changes
+                    <h1 class="navbar-item">Simple Ink Story Web Player</h1>
                 </a>
             
         </div>
@@ -68,11 +60,7 @@
                     
                         <a
                             class="link user-link "
-<<<<<<< Updated upstream
-                            href="https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-manager"
-=======
-                            href="https://github.com/FranciscoFornell/MIST/tree/master/packages/mist-utils"
->>>>>>> Stashed changes
+                            href="https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-web-player"
                         >
                             Github
                         </a>
@@ -91,15 +79,15 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Modules</h3><ul><li><a href="module-Utils.html">Utils</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components</h3><ul><li><a href="InkButton.html">InkButton</a></li><li><a href="InkChoices.html">InkChoices</a></li><li><a href="InkHeader.html">InkHeader</a></li><li><a href="InkLines.html">InkLines</a></li><li><a href="InkStoryWebPlayer.html">InkStoryWebPlayer</a></li></ul></div>
                 
             </nav>
         </div>
         <div class="core" id="main-content-wrapper">
             <div class="content">
                 <header class="page-title">
-                    <p>Module</p>
-                    <h1>Utils</h1>
+                    <p>Components</p>
+                    <h1>InkStoryWebPlayer</h1>
                 </header>
                 
 
@@ -110,8 +98,9 @@
 
 <header>
     
-        
-            
+        <h2>
+            &ltInkStoryWebPlayer <i>storyContent</i> /&gt
+        </h2>
         
     
 </header>
@@ -120,124 +109,22 @@
     <div class="container-overview">
     
         
-            <div class="description">Utils module.</div>
-        
-
-        
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-        <p class="tag-source">
-            <a href="utils.js.html" class="button">View Source</a>
-            <span>
-                <a href="utils.js.html">utils.js</a>, <a href="utils.js.html#line1">line 1</a>
-            </span>
-        </p>
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    
-    </div>
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <div class='vertical-section'>
-            <h1>Methods</h1>
-            <div class="members">
-            
-                <div class="member">
+            <div class='vertical-section'>
+                <div class="members">
+                    <div class="member">
+                        <div class=name>
+                            <span class="tag">Constructor</span>
+                        </div>
+                        
 
 
     
-    <h4 class="name" id="~pick">
-        <a class="href-link" href="#~pick">#</a>
-        
-            
-                <span class='tag'>inner</span>
-            
+    <h4 class="name" id="InkStoryWebPlayer">
+        <a class="href-link" href="#InkStoryWebPlayer">#</a>
         
         <span class="code-name">
             
-                pick<span class="signature">(obj, &hellip;property)</span><span class="type-signature"> &rarr; {Object}</span>
+                &ltInkStoryWebPlayer <i>storyContent</i> /&gt
             
         </span>
     </h4>
@@ -246,7 +133,7 @@
     
     
     <div class="description">
-        Takes an object and a whitelist of properties names, and returns a new object with only the whitelisted properties
+        Ink Story Web Player
     </div>
     
 
@@ -256,103 +143,40 @@
 
 
 
-
-
-    <h5>Parameters:</h5>
     
+        <h5>PropTypes:</h5>
+        
 <div class="table-container">
-    <table class="params table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
+  <table class="params table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Description</th>
+        <th class="last">Default</th>
+    </tr>
+    </thead>
 
-            <th>Type</th>
-
-            
-            <th>Attributes</th>
-            
-
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>obj</code></td>
-  
-
-  <td class="type">
-  
-      
-<span class="param-type">Object</span>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-
-      
-
-      
-      </td>
-  
-
-  
-
-  <td class="description last">The origin object</td>
-</tr>
-
-
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>property</code></td>
-  
-
-  <td class="type">
-  
-      
-<span class="param-type">string</span>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-
-      
-
-      
-          &lt;repeatable><br>
-      
-      </td>
-  
-
-  
-
-  <td class="description last">a property name to be picked</td>
-</tr>
-
-
-        
-        </tbody>
-    </table>
+    <tbody>
+    
+          <tr class="deep-level-0">
+            <td class="name"><code>storyContent</code></td>
+            <td>
+              object
+            </td>
+            <td>Yes</td>
+            <td>Inkle's ink story in json format</td>
+            <td></td>
+          </tr>
+          
+    
+    </tbody>
+  </table>
 </div>
+    
+
+
 
 
 
@@ -391,9 +215,9 @@
 
     
         <p class="tag-source">
-            <a href="utils.js.html" class="button">View Source</a>
+            <a href="InkStoryWebPlayer_index.js.html" class="button">View Source</a>
             <span>
-                <a href="utils.js.html">utils.js</a>, <a href="utils.js.html#line11">line 11</a>
+                <a href="InkStoryWebPlayer_index.js.html">InkStoryWebPlayer/index.js</a>, <a href="InkStoryWebPlayer_index.js.html#line22">line 22</a>
             </span>
         </p>
     
@@ -416,38 +240,49 @@
 
 
 
-    <div class='columns method-parameter'>
-        <div class="column is-2"><label>Returns:</label></div>
-        <div class="column is-10">
-            
-                    
 
-<div class="columns">
+
+
+    <h5>Example</h5>
     
-    <div class='param-desc column is-7'>Result object</div>
     
-    
-    <div class='column is-5 has-text-left'>
-        <label>Type: </label>
         
-<span class="param-type">Object</span>
+
+<div id='component0'></div>
+
+<script>
+  ReactDOM.render(ReactWrapper({
+    example: "const props = {\n  storyContent: {\"inkVersion\":19,\"root\":[[{\"#\":\"title: InkStory component example\"},{\"#\":\"author: John Doe\"},{\"#\":\"defaultContinueText: Continue\"},{\"#\":\"continueMaximally\"},\"^Line 1\",\"\\n\",\"^Line 2\",\"\\n\",\"^Line 3\",\"\\n\",\"ev\",\"str\",\"^Choice 1\",\"/str\",\"/ev\",{\"*\":\"0.c-0\",\"flg\":20},\"ev\",\"str\",\"^Choice 2\",\"/str\",\"/ev\",{\"*\":\"0.c-1\",\"flg\":20},{\"c-0\":[\"\\n\",\"^You choosed 1\",\"\\n\",{\"->\":\"0.g-0\"},{\"#f\":5}],\"c-1\":[\"\\n\",\"^You choosed 2\",\"\\n\",{\"->\":\"0.g-0\"},{\"#f\":5}],\"g-0\":[\"^Line 4\",\"\\n\",\"end\",[\"done\",{\"#n\":\"g-1\"}],null]}],\"done\",null],\"listDefs\":{}},\n};\n\nreturn (<div style={{minHeight: '150px'}}>\n  <InkStoryWebPlayer {...props} />\n</div>);",
+    uniqId: "component0",
+  }), document.getElementById('component0'));
+</script>
+    
 
 
+
+                    </div>
+                </div>
+            </div>
+        
+    
     </div>
     
-</div>
+        
+    
+    
 
-                
-        </div>
-    </div>
+    
 
+    
 
+    
 
+    
 
-</div>
-            
-            </div>
-        </div>
+    
+
+    
+
     
 
     

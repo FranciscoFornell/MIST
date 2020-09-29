@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,11 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< Updated upstream
-  <title>Docs: Utils Home</title>
-=======
-  <title>Docs: MIST Utils Home</title>
->>>>>>> Stashed changes
+  <title>Docs: MIST Utils utils.js</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -46,11 +44,7 @@
             
              
                 <a href="index.html">
-<<<<<<< Updated upstream
-                    <h1 class="navbar-item">Utils</h1>
-=======
                     <h1 class="navbar-item">MIST Utils</h1>
->>>>>>> Stashed changes
                 </a>
             
         </div>
@@ -68,11 +62,7 @@
                     
                         <a
                             class="link user-link "
-<<<<<<< Updated upstream
-                            href="https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-manager"
-=======
                             href="https://github.com/FranciscoFornell/MIST/tree/master/packages/mist-utils"
->>>>>>> Stashed changes
                         >
                             Github
                         </a>
@@ -98,33 +88,36 @@
         <div class="core" id="main-content-wrapper">
             <div class="content">
                 <header class="page-title">
-                    <p></p>
-                    <h1>Home</h1>
+                    <p>Source</p>
+                    <h1>utils.js</h1>
                 </header>
                 
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Utils module.
+ * @module Utils
+ */
+/**
+ * Takes an object and a whitelist of properties names, and returns a new object with only the whitelisted properties
+ * @param {Object} obj - The origin object
+ * @param {...string} property - a property name to be picked
+ * @returns {Object} Result object
+ */
+const pick = (obj, ...whiteList) =>
+  whiteList.reduce(
+    (prev, key) => (obj[key] ? { ...prev, [key]: obj[key] } : prev),
+    {}
+  );
 
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export { pick };
+</code></pre>
+        </article>
+    </section>
 
 
 
