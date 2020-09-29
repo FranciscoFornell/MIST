@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.8 (2020-09-29)
+
+
+### Bug Fixes
+
+* :construction_worker: hotfix CI ([c755210](https://github.com/FranciscoFornell/MIST/commit/c755210937214a346f525541e2bf82a9afdd87ec))
+
+
+
+
+
 ## 1.0.7 (2020-09-29)
 
 
