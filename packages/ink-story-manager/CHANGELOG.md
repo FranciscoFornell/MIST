@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.13 (2020-09-29)
+
+
+### Bug Fixes
+
+* :fire: hotfix CI ([05416c4](https://github.com/FranciscoFornell/MIST/commit/05416c40b7c008f3ce52f5184ee76f67c7f85973))
+
+
+
+
+
 ## 0.1.12 (2020-09-29)
 
 **Note:** Version bump only for package ink-story-manager
