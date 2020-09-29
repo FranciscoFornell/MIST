@@ -1,6 +1,6 @@
 {
   "name": "ink-story-manager",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "private": true,
   "description": "Library for managing Inkle's Ink stories.",
   "keywords": [
