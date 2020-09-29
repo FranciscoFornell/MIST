@@ -51,5 +51,5 @@ jobs:
           git checkout --theirs -- docs || true
           git reset
           for PACKAGE in $(ls docs); do (git diff --quiet docs/$PACKAGE/latest || git add docs/$PACKAGE) done
-          git diff --cached --quiet docs || (git commit -m "chore: github action - documentation update"; git push)
+          git diff --cached --quiet -- docs || (git commit -m "chore: github action - documentation update"; git push)
           git checkout master
