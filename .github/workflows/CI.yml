@@ -32,7 +32,7 @@ jobs:
           git stash
           git fetch
           git checkout docs
-          git stash pop --quier || true
+          git stash pop --quiet || true
           git checkout --theirs -- docs || true
           git diff --cached --quiet docs/*/badges || (git commit -m "chore: github action - coverage badges update"; git push)
           git checkout master
