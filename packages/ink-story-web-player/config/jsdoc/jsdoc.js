@@ -31,7 +31,7 @@ module.exports = {
         {
           label: 'Github',
           href:
-            'https://github.com/FranciscoFornell/MIST/tree/master/packages/simple-ink-story-web-player',
+            'https://github.com/FranciscoFornell/MIST/tree/master/packages/ink-story-web-player',
         },
       ],
     },
