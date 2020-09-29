@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.7 (2020-09-29)
+
+
+### Bug Fixes
+
+* :construction_worker: hotfix CI ([b21ec8e](https://github.com/FranciscoFornell/MIST/commit/b21ec8ee2fb549a6cfc75cbbabf51544621b9747))
+
+
+
+
+
 ## 0.1.6 (2020-09-29)
 
 **Note:** Version bump only for package ink-story-web-player
