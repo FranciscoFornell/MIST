@@ -1,6 +1,10 @@
 # `ink-story-web-player`
 
-![CI](https://github.com/FranciscoFornell/MIST/workflows/CI/badge.svg)![Coverage branches](https://franciscofornell.github.io/MIST/ink-story-web-player/badges/badge-branches.svg)![Coverage functions](https://franciscofornell.github.io/MIST/ink-story-web-player/badges/badge-functions.svg)![Coverage lines](https://franciscofornell.github.io/MIST/ink-story-web-player/badges/badge-lines.svg)![Coverage statements](https://franciscofornell.github.io/MIST/ink-story-web-player/badges/badge-statements.svg)
+![CI](https://github.com/FranciscoFornell/MIST/workflows/CI/badge.svg)
+
+![Coverage branches](https://franciscofornell.github.io/MIST/ink-story-web-player/badges/badge-branches.svg)![Coverage functions](https://franciscofornell.github.io/MIST/ink-story-web-player/badges/badge-functions.svg)![Coverage lines](https://franciscofornell.github.io/MIST/ink-story-web-player/badges/badge-lines.svg)![Coverage statements](https://franciscofornell.github.io/MIST/ink-story-web-player/badges/badge-statements.svg)
+
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 A [React](https://es.reactjs.org/) component for playing [Inkle's Ink](https://www.inklestudios.com/ink/) stories
 
