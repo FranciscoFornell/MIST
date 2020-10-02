@@ -49,7 +49,7 @@ Add `ink-story-manager` to **package.json** dependencies property on the package
 }
 ```
 
-Then go to the repository root and run:
+Then go to the **repository root** and run:
 
 > If you haven't done it already, install MIST dependencies
 
