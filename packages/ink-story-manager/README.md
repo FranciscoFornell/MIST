@@ -51,12 +51,21 @@ Add `ink-story-manager` to **package.json** dependencies property on the package
 
 Then go to the repository root and run:
 
+> If you haven't done it already, install MIST dependencies
+
 ```bash
-# If you haven't done it already, install MIST dependencies:
 npm install
-# Bootstrap MIST packages dependencies:
+```
+
+> Bootstrap MIST packages dependencies
+
+```bash
 npm run lerna:bootstrap
-# And finally build all packages
+```
+
+> And finally build all packages
+
+```bash
 npm run build
 ```
 
