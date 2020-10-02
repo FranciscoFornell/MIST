@@ -6,16 +6,26 @@
 
 A javascript library for managing [Inkle's Ink](https://www.inklestudios.com/ink/) stories. `ink-story-manager` is part of [MIST monorepo](https://github.com/FranciscoFornell/MIST).
 
-## Usage
+## Table of contents
+
+- [Installation](#installation)
+  - [Installation as npm package](#installation-as-npm-package)
+  - [Installation as local dependency on other MIST packages](#installation-as-local-dependency-on-other-mist-packages)
+- [Usage](#usage)
+- [Documentation](#documentation)
+
+## Installation
+
+#### Installation as npm package
 
 > **Note:**
 > This package is on early development stage and **not yet published on npm**. Once it is published, you will be able to install it with `npm install --save inkjs ink-story-manager`.
 
-### Usage as local dependency on other MIST packages
+### Installation as local dependency on other MIST packages
 
 To use this package on other [MIST](https://github.com/FranciscoFornell/MIST) packages, you can let [lerna](https://lerna.js.org/) manage the dependency. `ink-story-manager` uses [`inkjs`](https://github.com/y-lohse/inkjs) as a peer dependency, so they should be installed together.
 
-First install [`inkjs`](https://github.com/y-lohse/inkjs) on the package in :
+First install [`inkjs`](https://github.com/y-lohse/inkjs) on the package you want `ink-story-manager` in:
 
 ```bash
 npm install --save inkjs
@@ -24,7 +34,7 @@ npm install --save inkjs
 Add `ink-story-manager` to **package.json** dependencies property on the package in which you want yo use it.
 
 > **Note:**
-> The example version may be outdated. Make sure it uses the proper version number.
+> The example version may be outdated. Make sure to use the proper version number.
 
 ```json
 {
@@ -48,11 +58,22 @@ npm run lerna:bootstrap
 npm run build
 ```
 
-After that, you can import it as usual in the package in which you need it:
+After that, you can import it as usual in the package in which you need it.
 
 ```javascript
 // All MIST packages use babel, so you should use ES6 imports
 import InkStoryManager from 'ink-story-manager';
+```
+
+## Usage
+
+You need an [ink story](https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md) in json format in order to create an `InkStoryManager` instance.
+You can convert an ink file to json using [Inky](https://github.com/inkle/inky) editor, or [`inklecate`](https://www.npmjs.com/package/inklecate), or a webpack loader such as [`inklecate-loader`](https://www.npmjs.com/package/inklecate-loader). Then you can import the json file on your javascript with a commonJS require or an ES6 import. Or you can fetch it from a server. Once the json is loaded, you need to pass its storyContent property to InkStoryManager constructor.
+
+```javascript
+import import { storyContent } from 'ink-story.json';
+
+const storyManager = InkStoryManager(storyContent);
 ```
 
 ## Documentation
