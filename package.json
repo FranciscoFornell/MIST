@@ -17,7 +17,14 @@
     "prettier": "node_modules/.bin/prettier",
     "docs": "run-p docs:latest docs:version",
     "docs:latest": "lerna run docs",
-    "docs:version": "lerna run docs:version"
+    "docs:version": "lerna run docs:version",
+    "readme": "run-s readme:clean contributors readme:compose readme:format",
+    "readme:clean": "rimraf README.md",
+    "readme:compose": "concat-cli -f readme-parts/ABOUT.md readme-parts/CONTRIBUTORS.md -o README.md",
+    "readme:format": "prettier --write README.md",
+    "contributors": "run-s contributors:clean contributors:generate",
+    "contributors:clean": "rimraf readme-parts/CONTRIBUTORS.md ",
+    "contributors:generate": "node_modules/.bin/githubcontrib --owner FranciscoFornell --repo MIST --cols 6 --filter actions-user > readme-parts/CONTRIBUTORS.md"
   },
   "repository": {
     "type": "git",
@@ -32,11 +39,14 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "github-contributors-list": "^1.2.4",
     "husky": "^4.3.0",
     "lerna": "^3.22.1",
     "lint-staged": "^10.3.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.1.1"
+    "prettier": "^2.1.1",
+    "rimraf": "^3.0.2",
+    "concat-cli": "^4.0.0"
   },
   "husky": {
     "hooks": {
