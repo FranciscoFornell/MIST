@@ -35,7 +35,7 @@ jobs:
           git stash pop --quiet || true
           git checkout --theirs -- docs || true
           git add docs/*/badges
-          git diff --cached --quiet -- docs/*/badges || (git commit -m "chore: github action - coverage badges update"; git push)
+          git diff --cached --quiet -- docs/*/badges || (git commit -m "github action: coverage badges update"; git push)
           git checkout master
       - name: Build
         run: npm run build
@@ -51,6 +51,12 @@ jobs:
           git checkout --theirs -- docs || true
           git reset
           for PACKAGE in $(ls docs); do (git diff --quiet -- docs/$PACKAGE/latest || git add docs/$PACKAGE) done
-          git diff --cached --quiet || (git commit -m "chore: github action - documentation update"; git push)
+          git diff --cached --quiet || (git commit -m "github action: documentation update"; git push)
           git reset --hard
           git checkout master
+      - name: Update readme file
+        run: |
+          npm run readme
+          git diff --quiet -- README.md || git add readme.md
+          git diff --cached --quiet || (git commit -m "github action: readme file update"; git push)
+          git reset --hard

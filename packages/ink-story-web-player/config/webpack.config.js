@@ -23,7 +23,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: 'ink-story-web-player.min.js',
-    library: 'InkStoryManager',
+    library: 'InkStoryWebPlayer',
     libraryTarget: 'umd',
   },
   externals: {
