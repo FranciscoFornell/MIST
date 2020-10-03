@@ -57,6 +57,6 @@ jobs:
       - name: Update readme file
         run: |
           npm run readme
-          git diff --quiet -- README.md || git add readme.md
+          git diff --quiet -- README.md || git add README.md
           git diff --cached --quiet || (git commit -m "github action: readme file update"; git push)
           git reset --hard
