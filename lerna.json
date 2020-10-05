@@ -1,6 +1,30 @@
 {
-  "packages": [
-    "packages/*"
-  ],
-  "version": "independent"
+  "packages": ["packages/*"],
+  "version": "independent",
+  "command": {
+    "version": {
+      "ignoreChanges": [
+        "*.md",
+        "packages/*/package-lock.json",
+        "package-lock.json",
+        ".github"
+      ]
+    },
+    "changed": {
+      "ignoreChanges": [
+        "*.md",
+        "packages/*/package-lock.json",
+        "package-lock.json",
+        ".github"
+      ]
+    },
+    "publish": {
+      "ignoreChanges": [
+        "*.md",
+        "packages/*/package-lock.json",
+        "package-lock.json",
+        ".github"
+      ]
+    }
+  }
 }
