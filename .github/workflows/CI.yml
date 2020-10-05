@@ -13,6 +13,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        fetch-depth: '0'
       - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
@@ -24,6 +25,7 @@ jobs:
           git reset --hard
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git fetch --depth=1 origin +refs/tags/*:refs/tags/*
       - name: Run checks
         run: |
           npm run checks
