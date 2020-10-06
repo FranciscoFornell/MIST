@@ -33,13 +33,11 @@ jobs:
         run: |
           (echo "LAST_COMMIT_MESSAGE=\"$(git log -1 --pretty=%B)\"" >> $GITHUB_ENV) || true
       - name: Set minor MIST version
-        if: |
-          [[ $LAST_COMMIT_MESSAGE == *"MIST_MINOR_VERSION"* ]]
+        if: ${{ [[ $LAST_COMMIT_MESSAGE == *"MIST_MINOR_VERSION"* ]] }}
         run: |
           (echo "VERSION_TYPE=minor" >> $GITHUB_ENV) || true
       - name: Set major MIST version
-        if: |
-          [[ $LAST_COMMIT_MESSAGE == *"MIST_MAJOR_VERSION"* ]]
+        if: ${{ [[ $LAST_COMMIT_MESSAGE == *"MIST_MAJOR_VERSION"* ]] }}
         run: |
           (echo "VERSION_TYPE=major" >> $GITHUB_ENV) || true
       - name: Run checks
