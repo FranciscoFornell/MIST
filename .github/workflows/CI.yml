@@ -19,9 +19,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
-      - name: Just a test
-        run: |
-          [[ $(git log -1 --pretty=%B) == *"MIST_TEST"* ]] && echo "It worked"
       - name: Setup
         run: |
           npm install
