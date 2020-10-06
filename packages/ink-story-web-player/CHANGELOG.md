@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.16](https://github.com/FranciscoFornell/MIST/compare/ink-story-web-player@0.1.15...ink-story-web-player@0.1.16) (2020-10-06)
+
+**Note:** Version bump only for package ink-story-web-player
+
+
+
+
+
 ## 0.1.15 (2020-10-05)
 
 **Note:** Version bump only for package ink-story-web-player

@@ -1,6 +1,6 @@
 {
   "name": "ink-story-web-player",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "private": true,
   "description": "React component for playing Inkle's Ink stories.",
   "keywords": [
@@ -111,7 +111,7 @@
     ]
   },
   "dependencies": {
-    "ink-story-manager": "^0.1.24",
+    "ink-story-manager": "^0.1.25",
     "inkjs": "^1.11.0",
     "mist-utils": "^1.0.14",
     "prop-types": "^15.7.2",
