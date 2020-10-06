@@ -20,7 +20,9 @@ jobs:
         with:
           node-version: 14.x
       - name: Just a test
-        run: contains($(git log -1 --pretty=%B), 'MIST_TEST') && echo 'It worked'
+        run: |
+          LAST_COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+          contains($LAST_COMMIT_MESSAGE, 'MIST_TEST') && echo 'It worked'
       - name: Setup
         run: |
           npm install
