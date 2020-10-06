@@ -7,8 +7,8 @@ assignees: ''
 
 ---
 
-**What MIST package would like to ask about?**
+### What MIST package would like to ask about?
 Name of the package
 
-**What would you like to know?**
+### What would you like to know?
 Ask your question here.
