@@ -48,7 +48,11 @@ jobs:
       - name: Build
         run: npm run build
       - name: Publish
-        run: npm version $VERSION_TYPE
+        run: |
+          npm version $VERSION_TYPE
+          git add package.json
+          git diff --cached --quiet || (git commit -m "github action: package.json update"; git push)
+
       - name: Generate documentation
         run: |
           npm run docs
