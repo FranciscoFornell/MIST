@@ -19,6 +19,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
+      - name: Set MIST version type
+        run: |
+          LAST_COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+          VERSION_TYPE="patch"
+          [[ $LAST_COMMIT_MESSAGE == *"MIST_MINOR_VERSION"* ]] && VERSION_TYPE="minor"
+          [[ $LAST_COMMIT_MESSAGE == *"MIST_MAJOR_VERSION"* ]] && VERSION_TYPE="major"
       - name: Setup
         run: |
           npm install
@@ -43,7 +49,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Publish
-        run: npm run version
+        run: npm version $VERSION_TYPE
       - name: Generate documentation
         run: |
           npm run docs

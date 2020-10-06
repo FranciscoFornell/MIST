@@ -1,10 +1,10 @@
-# Description
+### Description
 
 Please include a summary of the change and which issue it is related to. Please also include relevant motivation and context. List any dependencies that are required for this change.
 
 Closes #issue_number
 
-## Type of change
+### Type of change
 
 Please delete options that are not relevant.
 
@@ -13,7 +13,7 @@ Please delete options that are not relevant.
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 - [ ] This change requires a documentation update
 
-# Checklist:
+### Checklist:
 
 - [ ] My code follows the [style guidelines](https://github.com/FranciscoFornell/MIST/blob/master/CONTRIBUTING.md#styleguides) of this project
 - [ ] I have performed a self-review of my own code
@@ -22,3 +22,8 @@ Please delete options that are not relevant.
 - [ ] I have made corresponding changes to the documentation
 - [ ] My changes generate no new warnings
 - [ ] New and existing unit tests pass locally with my changes
+
+### MIST version
+
+After merging this pull request, MIST version will be increased, considering the change to be a patch default.
+In case it should be versioned as minor or major, you can add MIST_MINOR_VERSION or MIST_MAJOR_VERSION keywords to the pull request merge commit message.
