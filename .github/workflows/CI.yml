@@ -22,7 +22,7 @@ jobs:
       - name: Just a test
         run: |
           LAST_COMMIT_MESSAGE=$(git log -1 --pretty=%B)
-          contains($LAST_COMMIT_MESSAGE, 'MIST_TEST') && echo 'It worked'
+          contains(LAST_COMMIT_MESSAGE, 'MIST_TEST') && echo 'It worked'
       - name: Setup
         run: |
           npm install
