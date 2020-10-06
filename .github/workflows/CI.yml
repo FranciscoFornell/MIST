@@ -29,9 +29,9 @@ jobs:
           git fetch --depth=1 origin +refs/tags/*:refs/tags/*
       - name: Set MIST version type
         run: |
-          echo "VERSION_TYPE=patch" >> $GITHUB_ENV
-          [[ $(git log -1 --pretty=%B) == *"MIST_MINOR_VERSION"* ]] && echo "VERSION_TYPE=minor" >> $GITHUB_ENV
-          [[ $(git log -1 --pretty=%B) == *"MIST_MAJOR_VERSION"* ]] && echo "VERSION_TYPE=major" >> $GITHUB_ENV
+          (echo "VERSION_TYPE=patch" >> $GITHUB_ENV) || true
+          [[ $(git log -1 --pretty=%B) == *"MIST_MINOR_VERSION"* ]] && (echo "VERSION_TYPE=minor" >> $GITHUB_ENV) || true
+          [[ $(git log -1 --pretty=%B) == *"MIST_MAJOR_VERSION"* ]] && (echo "VERSION_TYPE=major" >> $GITHUB_ENV) || true
       - name: Run checks
         run: |
           npm run checks
