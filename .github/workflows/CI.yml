@@ -49,6 +49,7 @@ jobs:
         run: npm run build
       - name: Publish
         run: |
+          npm run lerna:version
           npm version $VERSION_TYPE
           git add package.json
           git diff --cached --quiet || (git commit -m "github action: package.json update"; git push)
