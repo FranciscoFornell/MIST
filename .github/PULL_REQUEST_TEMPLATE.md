@@ -26,4 +26,4 @@ Please delete options that are not relevant.
 ### MIST version
 
 After merging this pull request, MIST version will be increased, considering the change to be a patch default.
-In case it should be versioned as minor or major, you can add MIST_MINOR_VERSION or MIST_MAJOR_VERSION keywords to the pull request merge commit message.
+In case it should be versioned as minor or major, you can add #minor or #major keywords to the pull request merge commit message.
