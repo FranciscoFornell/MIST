@@ -115,7 +115,7 @@ class InkStoryManager {
     return { canContinue, historyLines, currentChoices };
   }
   /**
-   * True if it is not the first line and the story can be rewinded
+   * True if it is not the first line and the story can be rewound
    * @type {Boolean}
    * @readonly
    */
@@ -124,7 +124,7 @@ class InkStoryManager {
   }
 
   /**
-   * Continue the story, one step by default or until it can not contiue if continueMaximally tag is set.
+   * Continue the story, one step by default or until it can not continue if continueMaximally tag is set.
    * When a choiceIndex is given, it selects the choice, and continue.
    * @param {number} [choiceIndex] - The index of the choice
    * @returns {module:InkStoryManager~Step} The current step data
