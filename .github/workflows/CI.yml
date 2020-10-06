@@ -29,7 +29,7 @@ jobs:
           git fetch --depth=1 origin +refs/tags/*:refs/tags/*
       - name: Get last commit message
         run: |
-          (echo "LAST_COMMIT_MESSAGE=\"$(git log -1 --pretty=%B)\"" >> $GITHUB_ENV) || true
+          (echo "LAST_COMMIT_MESSAGE=$(git log -1 --pretty=%B)" >> $GITHUB_ENV) || true
       - name: Set MIST version type
         run: |
           (echo "VERSION_TYPE=patch" >> $GITHUB_ENV) || true
