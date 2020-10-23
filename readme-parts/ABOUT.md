@@ -3,6 +3,9 @@
 # Marvelous Interactive Storytelling Tools
 
 ![CI](https://github.com/FranciscoFornell/MIST/workflows/CI/badge.svg)
+[![Coverage Badge](https://app.codacy.com/project/badge/Coverage/7b7c728b9545442295fb7151b9ce0d66)](https://www.codacy.com/gh/FranciscoFornell/MIST/dashboard?utm_source=github.com&utm_medium=referral&utm_content=FranciscoFornell/MIST&utm_campaign=Badge_Coverage)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/7b7c728b9545442295fb7151b9ce0d66)](https://www.codacy.com/gh/FranciscoFornell/MIST/dashboard?utm_source=github.com&utm_medium=referral&utm_content=FranciscoFornell/MIST&utm_campaign=Badge_Grade)
+
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)

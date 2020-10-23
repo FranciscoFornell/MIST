@@ -30,10 +30,7 @@
     "build": "node_modules/.bin/webpack --config config/webpack.config.js",
     "postversion": "run-p docs docs:version",
     "lint": "node_modules/.bin/eslint src/**",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "test:badges": "jest-coverage-badges output \"../../docs/ink-story-web-player/badges\"",
-    "test:ci": "run-s test:coverage test:badges",
+    "test": "jest --coverage",
     "test:watch": "jest --watch",
     "checks": "run-p lint test",
     "docs": "run-s docs:clean-latest docs:build-latest",
@@ -67,7 +64,6 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-react": "^7.21.1",
     "jest": "^26.4.2",
-    "jest-coverage-badges": "^1.1.2",
     "jest-serializer-html": "^7.0.0",
     "jsdoc": "^3.6.5",
     "livereload": "^0.9.1",
@@ -84,7 +80,7 @@
     "clearMocks": true,
     "coverageDirectory": "coverage",
     "coverageReporters": [
-      "json-summary",
+      "lcov",
       "text"
     ],
     "collectCoverageFrom": [

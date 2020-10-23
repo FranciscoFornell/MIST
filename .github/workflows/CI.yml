@@ -34,18 +34,15 @@ jobs:
           git config --local user.name "GitHub Action"
           git fetch --depth=1 origin +refs/tags/*:refs/tags/*
       - name: Run checks
-        run: |
-          npm run checks
-          npm run test:ci
-          git add docs/*/badges --force
-          git stash
-          git fetch
-          git checkout docs
-          git stash pop --quiet || true
-          git checkout --theirs -- docs || true
-          git add docs/*/badges
-          git diff --cached --quiet -- docs/*/badges || (git commit -m "github action: coverage badges update"; git push)
-          git checkout master
+        run: npm run checks
+      - name: Run codacy-coverage-reporter
+        uses: codacy/codacy-coverage-reporter-action@master
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          coverage-reports: |
+            packages/mist-utils/coverage/lcov.info,
+            packages/mist-utils/coverage/lcov.info,
+            packages/mist-utils/coverage/lcov.info
       - name: Build
         run: npm run build
       - name: Publish
