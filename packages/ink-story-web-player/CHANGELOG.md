@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.17](https://github.com/FranciscoFornell/MIST/compare/ink-story-web-player@0.1.16...ink-story-web-player@0.1.17) (2020-10-23)
+
+
+### Bug Fixes
+
+* :bug: fix typo on inkStoryWebPlayer component ([c2052ba](https://github.com/FranciscoFornell/MIST/commit/c2052ba0d9314420c200889d5c495bb74fa8e50c))
+
+
+
+
+
 ## [0.1.16](https://github.com/FranciscoFornell/MIST/compare/ink-story-web-player@0.1.15...ink-story-web-player@0.1.16) (2020-10-06)
 
 **Note:** Version bump only for package ink-story-web-player

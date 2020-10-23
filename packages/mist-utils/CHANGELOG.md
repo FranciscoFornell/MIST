@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.15](https://github.com/FranciscoFornell/MIST/compare/mist-utils@1.0.14...mist-utils@1.0.15) (2020-10-23)
+
+
+### Bug Fixes
+
+* :bug: just a test ([8e1f770](https://github.com/FranciscoFornell/MIST/commit/8e1f77051ac26f3b6ad0f44128040e5499999a82))
+
+
+
+
+
 ## 1.0.14 (2020-10-05)
 
 **Note:** Version bump only for package mist-utils
