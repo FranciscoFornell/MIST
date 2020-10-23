@@ -39,10 +39,7 @@ jobs:
         uses: codacy/codacy-coverage-reporter-action@master
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          coverage-reports: |
-            packages/mist-utils/coverage/lcov.info,
-            packages/mist-utils/coverage/lcov.info,
-            packages/mist-utils/coverage/lcov.info
+          coverage-reports: packages/mist-utils/coverage/lcov.info,packages/mist-utils/coverage/lcov.info,packages/mist-utils/coverage/lcov.info
       - name: Build
         run: npm run build
       - name: Publish
