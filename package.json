@@ -13,7 +13,7 @@
     "lerna": "node_modules/.bin/lerna",
     "lerna:clean": "node_modules/.bin/lerna clean --yes",
     "lerna:bootstrap": "lerna bootstrap --hoist",
-    "lerna:version": "lerna version --conventional-commits --yes",
+    "lerna:version": "lerna version --conventional-commits --no-commit-hooks --yes",
     "prettier": "node_modules/.bin/prettier",
     "readme": "run-s readme:clean contributors readme:compose readme:format",
     "readme:clean": "rimraf README.md",
