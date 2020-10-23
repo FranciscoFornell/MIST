@@ -5,7 +5,7 @@
 /**
  * Takes an object and a whitelist of properties names, and returns a new object with only the whitelisted properties
  * @param {Object} obj - The origin object
- * @param {...string} property - a property name to be picked
+ * @param {...string} property - a property name to be pickedzdfgdxgfd
  * @returns {Object} Result object
  */
 const pick = (obj, ...whiteList) =>
