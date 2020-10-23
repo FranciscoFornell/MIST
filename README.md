@@ -31,7 +31,7 @@ Read our [contributing guide](CONTRIBUTING.md) to learn about our development pr
 
 ### Beginner-friendly bugs
 
-To help you get your feet wet and get you familiar with our contribution process, we have [a list of beginner-friendly issues](https://github.com/FranciscoFornell/MIST/labels/good%20first%20issue) that might contain smaller issues to tackle first. This is a great place to get started.
+To help you get your feet wet and get you familiar with our contribution process, we have [a list of beginner-friendly issues](https://github.com/FranciscoFornell/MIST/labels/%3Anew%3A%20good%20first%20issue) that might contain smaller issues to tackle first. This is a great place to get started.
 
 ### Contributors
 
