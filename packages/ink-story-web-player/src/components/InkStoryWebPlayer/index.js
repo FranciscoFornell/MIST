@@ -12,7 +12,7 @@ import InkStoryManager from 'ink-story-manager';
  * @component
  * @example
  * const props = {
- *   storyContent: {"inkVersion":19,"root":[[{"#":"title: InkStory component example"},{"#":"author: John Doe"},{"#":"defaultContinueText: Continue"},{"#":"continueMaximally"},"^Line 1","\n","^Line 2","\n","^Line 3","\n","ev","str","^Choice 1","/str","/ev",{"*":"0.c-0","flg":20},"ev","str","^Choice 2","/str","/ev",{"*":"0.c-1","flg":20},{"c-0":["\n","^You choosed 1","\n",{"->":"0.g-0"},{"#f":5}],"c-1":["\n","^You choosed 2","\n",{"->":"0.g-0"},{"#f":5}],"g-0":["^Line 4","\n","end",["done",{"#n":"g-1"}],null]}],"done",null],"listDefs":{}},
+ *   storyContent: {"inkVersion":19,"root":[[{"#":"title: InkStory component example"},{"#":"author: John Doe"},{"#":"defaultContinueText: Continue"},{"#":"continueMaximally"},"^Line 1","\n","^Line 2","\n","^Line 3","\n","ev","str","^Choice 1","/str","/ev",{"*":"0.c-0","flg":20},"ev","str","^Choice 2","/str","/ev",{"*":"0.c-1","flg":20},{"c-0":["\n","^You chose 1","\n",{"->":"0.g-0"},{"#f":5}],"c-1":["\n","^You chose 2","\n",{"->":"0.g-0"},{"#f":5}],"g-0":["^Line 4","\n","end",["done",{"#n":"g-1"}],null]}],"done",null],"listDefs":{}},
  * };
  *
  * return (<div style={{minHeight: '150px'}}>
