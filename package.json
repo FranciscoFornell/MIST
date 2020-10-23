@@ -1,6 +1,6 @@
 {
   "name": "mist",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Marvelous Interactive Storytelling Tools",
   "scripts": {
     "build": "lerna run build",
