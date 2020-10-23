@@ -28,6 +28,7 @@
   "scripts": {
     "start": "run-p docs:dev test:watch",
     "build": "node_modules/.bin/webpack --config config/webpack.config.js",
+    "postversion": "run-p docs docs:version",
     "lint": "node_modules/.bin/eslint src/**",
     "test": "jest",
     "test:coverage": "jest --coverage",

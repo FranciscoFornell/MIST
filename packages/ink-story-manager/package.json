@@ -28,6 +28,7 @@
     "start": "run-p docs:dev test:watch",
     "build": "node_modules/.bin/webpack --config config/webpack.config.js",
     "postbuild": "run-s types:clean types:generate",
+    "postversion": "run-p docs docs:version",
     "types:clean": "rimraf dist/*.d.ts",
     "types:generate": "node_modules/.bin/tsc",
     "lint": "node_modules/.bin/eslint src/**",

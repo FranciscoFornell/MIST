@@ -20,6 +20,7 @@
   },
   "scripts": {
     "start": "run-p docs:dev test:watch",
+    "postversion": "run-p docs docs:version",
     "lint": "node_modules/.bin/eslint src/**",
     "test": "jest",
     "test:coverage": "jest --coverage",
