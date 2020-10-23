@@ -34,8 +34,15 @@ jobs:
           git config --local user.name "GitHub Action"
           git fetch --depth=1 origin +refs/tags/*:refs/tags/*
       - name: Run checks
-        run: |
-          npm run checks
+        run: npm run checks
+      - name: Run codacy-coverage-reporter
+        uses: codacy/codacy-coverage-reporter-action@master
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          coverage-reports: |
+            packages/mist-utils/coverage/lcov.info,
+            packages/mist-utils/coverage/lcov.info,
+            packages/mist-utils/coverage/lcov.info
       - name: Build
         run: npm run build
       - name: Publish
