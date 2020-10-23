@@ -51,9 +51,8 @@ jobs:
       - name: Publish
         run: |
           npm run lerna:version
-      - name: Generate documentation
+      - name: Add generated documentation
         run: |
-          npm run docs
           git add docs --force
           git stash
           git checkout docs
