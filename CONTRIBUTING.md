@@ -4,17 +4,17 @@
 
 The following is a set of guidelines for contributing to MIST and its packages. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
-#### Table Of Contents
+## Table Of Contents
 
 [Code of Conduct](#code-of-conduct)
 
-[I don't want to read this whole thing, I just have a question!!!](#i-dont-want-to-read-this-whole-thing-i-just-have-a-question)
+[I just have a question and don't want to read this whole thing](#i-just-have-a-question-and-dont-want-to-read-this-whole-thing)
 
-[What should I know before I get started?](#what-should-i-know-before-i-get-started)
+[Things to know before getting started](#things-to-know-before-getting-started)
 
 - [MIST is a monorepo](#mist-is-a-monorepo)
 
-[How Can I Contribute?](#how-can-i-contribute)
+[How to contribute](#how-to-contribute)
 
 - [Reporting Bugs](#reporting-bugs)
 - [Suggesting Enhancements](#suggesting-enhancements)
@@ -37,17 +37,17 @@ The following is a set of guidelines for contributing to MIST and its packages. 
 
 This project and everyone participating in it is governed by the [Contributor Covenant code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [fco.fornell@gmail.com](mailto:fco.fornell@gmail.com).
 
-## I don't want to read this whole thing I just have a question!!!
+## I just have a question and don't want to read this whole thing
 
 If you have any questions you can always [file an issue](https://github.com/FranciscoFornell/MIST/issues/new) with the question label, or [contact by email](mailto:fco.fornell@gmail.com).
 
-## What should I know before I get started?
+## Things to know before getting started
 
 ### MIST is a monorepo
 
 MIST is a monorepo containing [several different packages](README.md#packages), and maintained with [Lerna](https://lerna.js.org/). If you want to contribute to any of them, you must clone the whole repository and you will find them under [the packages directory](packages/).
 
-## How Can I Contribute?
+## How to contribute
 
 ### Reporting Bugs
 
@@ -62,7 +62,7 @@ Before creating bug reports, please check [this list](#before-submitting-a-bug-r
 - **Determine [which package the problem should be reported in](#mist-is-a-monorepo)**.
 - **Perform a [cursory search](https://github.com/FranciscoFornell/MIST/issues)** to see if the problem has already been reported. If it has **and the issue is still open**, add a comment to the existing issue instead of opening a new one.
 
-#### How Do I Submit A (Good) Bug Report?
+#### How to submit a (Good) bug report
 
 Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). After you've determined [which package](#mist-is-a-monorepo) your bug is related to, [create an issue](<(https://github.com/FranciscoFornell/MIST/issues/new)>) on the repository, add both the bug label and the specific package label, and provide the following information by filling in [the template](https://github.com/FranciscoFornell/MIST/blob/master/.github/ISSUE_TEMPLATE/bug_report.md).
 
@@ -170,9 +170,9 @@ Please follow these steps to have your contribution considered by the maintainer
 > TODO
 > Add pull request template and update link
 
-1. Follow all instructions in [the template](PULL_REQUEST_TEMPLATE.md)
-2. Follow the [Styleguides](#styleguides)
-3. After you submit your pull request, verify that all [status checks](https://help.github.com/articles/about-status-checks/) are passing <details><summary>What if the status checks are failing?</summary>If a status check is failing, and you believe that the failure is unrelated to your change, please leave a comment on the pull request explaining why you believe the failure is unrelated. A maintainer will re-run the status check for you. If we conclude that the failure was a false positive, then we will open an issue to track that problem with our status check suite.</details>
+1.  Follow all instructions in [the template](PULL_REQUEST_TEMPLATE.md)
+2.  Follow the [Styleguides](#styleguides)
+3.  After you submit your pull request, verify that all [status checks](https://help.github.com/articles/about-status-checks/) are passing <details><summary>What if the status checks are failing?</summary>If a status check is failing, and you believe that the failure is unrelated to your change, please leave a comment on the pull request explaining why you believe the failure is unrelated. A maintainer will re-run the status check for you. If we conclude that the failure was a false positive, then we will open an issue to track that problem with our status check suite.</details>
 
 While the prerequisites above must be satisfied prior to having your pull request reviewed, the reviewer(s) may ask you to complete additional design work, tests, or other changes before your pull request can be ultimately accepted.
 
