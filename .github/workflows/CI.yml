@@ -34,12 +34,14 @@ jobs:
           git config --local user.name "GitHub Action"
           git fetch --depth=1 origin +refs/tags/*:refs/tags/*
       - name: Run checks
-        run: npm run checks
+        run: |
+          npm run checks
+          echo "COVERAGE_REPORTS=$(ls -dm packages/*/coverage/lcov.info | tr -d ' ')" >> $GITHUB_ENV
       - name: Run codacy-coverage-reporter
         uses: codacy/codacy-coverage-reporter-action@master
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          coverage-reports: packages/mist-utils/coverage/lcov.info,packages/ink-story-manager/coverage/lcov.info,packages/ink-story-web-player/coverage/lcov.info
+          coverage-reports: ${{env.COVERAGE_REPORTS}}
       - name: Build
         run: npm run build
       - name: Publish
